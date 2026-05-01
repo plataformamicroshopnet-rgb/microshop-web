@@ -7,9 +7,9 @@
   <meta name="description" content="MovilFree en Salamanca: telefonía, reparaciones, informática y papelería. Llámanos al 923 347 383." />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    .mf-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:2.5rem 2rem; text-align:center; transition:border-color var(--transition),transform var(--transition),box-shadow var(--transition); }
+    .mf-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.5rem; text-align:center; transition:border-color var(--transition),transform var(--transition),box-shadow var(--transition); }
     .mf-service:hover { border-color:#E91E8C; transform:translateY(-6px); box-shadow:0 20px 40px rgba(233,30,140,0.15); }
-    .mf-icon { font-size:3rem; margin-bottom:1.2rem; display:block; }
+    .mf-photo { width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:1.2rem; }
     .mf-service h3 { font-size:1.15rem; font-weight:700; margin-bottom:0.8rem; }
     .mf-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.75; }
     .call-banner { background:linear-gradient(135deg,#E91E8C22,#7b0040); border:1px solid #E91E8C66; border-radius:var(--radius); padding:4rem 2rem; text-align:center; }
@@ -34,7 +34,7 @@
     <a href="movilfree.html" class="active">MovilFree</a>
     <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
   </nav>
-  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" aria-label="Menúú"><span></span><span></span><span></span></button>
 </header>
 <nav class="mobile-nav" id="mobile-nav">
   <a href="index.html">Inicio</a>
@@ -55,7 +55,6 @@
     <p>Telefonía, reparaciones de móviles, informática y papelería. Todo en un mismo lugar, con el mejor servicio.</p>
     <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
       <a href="tel:923347383" class="btn btn-primary" style="background:#E91E8C;box-shadow:0 0 30px rgba(233,30,140,0.4);font-size:1.05rem">📞 923 347 383</a>
-      <a href="#contacto" class="btn btn-secondary">✉️ Escríbenos</a>
     </div>
   </div>
 </div>
@@ -70,22 +69,22 @@
     </div>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem">
       <div class="mf-service reveal reveal-delay-1">
-        <span class="mf-icon">📱</span>
+        <img src="img/mf-telefonia.png" alt="Telefonía" class="mf-photo" loading="lazy" />
         <h3>Telefonía</h3>
         <p>Venta de móviles, accesorios y fundas. Todas las marcas: Samsung, Xiaomi, iPhone y más.</p>
       </div>
       <div class="mf-service reveal reveal-delay-2">
-        <span class="mf-icon">🔧</span>
+        <img src="img/mf-reparaciones.png" alt="Reparaciones" class="mf-photo" loading="lazy" />
         <h3>Reparaciones</h3>
         <p>Reparación de pantallas rotas, baterías, conectores y cualquier avería en tu móvil o tablet.</p>
       </div>
       <div class="mf-service reveal reveal-delay-3">
-        <span class="mf-icon">💻</span>
+        <img src="img/mf-informatica.png" alt="Informática" class="mf-photo" loading="lazy" />
         <h3>Informática</h3>
         <p>Venta y reparación de ordenadores portátiles y de sobremesa. Componentes y periféricos.</p>
       </div>
       <div class="mf-service reveal reveal-delay-4">
-        <span class="mf-icon">🖨️</span>
+        <img src="img/mf-papeleria.png" alt="Papelería" class="mf-photo" loading="lazy" />
         <h3>Papelería</h3>
         <p>Material de oficina, impresión, cartuchos de tinta y todo lo que necesitas para tu día a día.</p>
       </div>
@@ -109,8 +108,8 @@
   <div class="container">
     <div class="reveal text-center">
       <span class="section-label">Contacto</span>
-      <h2 class="section-title">Preg�ntanos algo</h2>
-      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telef�nica Empresas. Tambi�n cualquier consulta sobre MicroShop.</p>
+      <h2 class="section-title">Pregntanos algo</h2>
+      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefnica Empresas. Tambin cualquier consulta sobre MicroShop.</p>
     </div>
     <div class="contact-wrap">
       <div class="contact-info reveal reveal-delay-1">
@@ -138,8 +137,8 @@
         <div class="contact-info-item">
           <div class="contact-info-icon">??</div>
           <div class="contact-info-text">
-            <p>Fundaci�n</p>
-            <span>1995 � m�s de 25 a�os sirviendo a Salamanca</span>
+            <p>Fundacin</p>
+            <span>1995  ms de 25 aos sirviendo a Salamanca</span>
           </div>
         </div>
       </div>
@@ -154,21 +153,21 @@
           <div class="form-group">
             <label for="asunto">Asunto</label>
             <select id="asunto" name="asunto">
-              <option value="">Selecciona un tema�</option>
+              <option value="">Selecciona un tema</option>
               <option>Tarifas Movistar</option>
               <option>Tienda O2</option>
-              <option>Telef�nica Empresas</option>
+              <option>Telefnica Empresas</option>
               <option>MovilFree</option>
               <option>Otro</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="�En qu� podemos ayudarte?" required></textarea>
+            <label for="mensaje">Menúsaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="En qu podemos ayudarte?" required></textarea>
           </div>
           <div class="form-check">
             <input type="checkbox" id="privacidad" name="privacidad" required />
-            <label for="privacidad">Acepto la <a href="https://microshop.info/politica-de-privacidad" target="_blank">pol�tica de privacidad</a></label>
+            <label for="privacidad">Acepto la <a href="https://microshop.info/politica-de-privacidad" target="_blank">poltica de privacidad</a></label>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
         </form>
