@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda O2 en Salamanca — MicroShop</title>
+  <meta name="description" content="La primera tienda oficial de O2 en Salamanca. Móvil y fibra sin permanencia. C/ Alarcón Nº2, Salamanca. Tel: 923 214 407." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .theme-o2 .page-hero-overlay { background:linear-gradient(to right,rgba(9,14,26,0.97) 45%,rgba(14,45,108,0.6)) !important; }
+    .o2-feature { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:2rem; text-align:center; transition:border-color var(--transition),transform var(--transition); }
+    .o2-feature:hover { border-color:#3399FF; transform:translateY(-4px); }
+    .o2-feature .icon { font-size:2.5rem; margin-bottom:1rem; }
+    .o2-feature h4 { font-size:1rem; font-weight:700; margin-bottom:0.5rem; }
+    .o2-feature p { font-size:0.88rem; color:var(--text-muted); line-height:1.7; }
+    .store-main-card { background:var(--dark-3); border:1px solid rgba(51,153,255,0.4); border-radius:var(--radius); overflow:hidden; max-width:700px; margin:0 auto; }
+    .store-main-img { width:100%; height:300px; object-fit:cover; }
+    .store-main-body { padding:2rem; }
+    .store-info-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.5rem; }
+    .store-info-block p { font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:4px; }
+    .store-info-block span, .store-info-block a { font-size:0.95rem; font-weight:600; color:var(--text); }
+    .store-info-block a { color:#3399FF; }
+    .store-info-block a:hover { color:var(--green); }
+    @media(max-width:600px) { .store-info-grid { grid-template-columns:1fr; } .store-main-img { height:200px; } }
+  </style>
+</head>
+<body class="theme-o2">
+
+<header id="header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="MicroShop" style="height:44px;width:auto;border-radius:8px;" />
+  </a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="tiendas-movistar.html">Tiendas Movistar</a>
+    <a href="o2.html" class="active">Tienda O2</a>
+    <a href="telefonica-empresas.html">Empresas</a>
+    <a href="movilfree.html">MovilFree</a>
+    <a href="index.html#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Inicio</a>
+  <a href="tiendas-movistar.html">Tiendas Movistar</a>
+  <a href="o2.html">Tienda O2</a>
+  <a href="telefonica-empresas.html">Empresas</a>
+  <a href="movilfree.html">MovilFree</a>
+  <a href="index.html#contacto" class="btn btn-primary">Contactar</a>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('img/hero-o2.png')"></div>
+  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 45%,rgba(14,45,108,0.6))"></div>
+  <div class="page-hero-content">
+    <span class="section-label" style="color:#3399FF">Tienda Oficial · Salamanca</span>
+    <h1>La tienda <span style="color:#3399FF">O2</span><br/>en Salamanca</h1>
+    <p>La primera tienda oficial de O2 en Salamanca. Fibra y móvil sin permanencia, al mejor precio.</p>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="tel:923214407" class="btn btn-blue">📞 Llamar: 923 214 407</a>
+      <a href="https://goo.gl/maps/example" target="_blank" class="btn btn-secondary">🗺 Cómo llegar</a>
+    </div>
+  </div>
+</div>
+
+<!-- TARJETA TIENDA -->
+<section style="padding:5rem 2rem;background:var(--dark-2)">
+  <div class="container">
+    <div class="reveal store-main-card">
+      <img src="img/tienda-o2.jpg" alt="Tienda O2 Salamanca" class="store-main-img" loading="lazy" />
+      <div class="store-main-body">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.5rem">
+          <div style="background:#0E2D6C;color:#fff;padding:6px 16px;border-radius:50px;font-size:0.85rem;font-weight:800">O2</div>
+          <h2 style="font-size:1.3rem;font-weight:700">Tienda O2 Salamanca — C/ Alarcón</h2>
+        </div>
+        <div class="store-info-grid">
+          <div class="store-info-block">
+            <p>Dirección</p>
+            <span>C/ Alarcón, Nº2<br/>37001 Salamanca</span>
+          </div>
+          <div class="store-info-block">
+            <p>Teléfono</p>
+            <a href="tel:923214407">923 214 407</a>
+          </div>
+          <div class="store-info-block">
+            <p>Horario lunes–viernes</p>
+            <span>10:00 – 14:00 · 17:00 – 20:30</span>
+          </div>
+          <div class="store-info-block">
+            <p>Horario sábados</p>
+            <span>10:00 – 14:00</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="tel:923214407" class="btn btn-blue">📞 Llamar ahora</a>
+          <a href="https://goo.gl/maps/example" target="_blank" class="btn btn-outline">🗺 Abrir en Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENTAJAS O2 -->
+<section style="padding:5rem 2rem;background:var(--dark-3)">
+  <div class="container">
+    <div class="reveal text-center" style="margin-bottom:3rem">
+      <span class="section-label" style="color:#3399FF">Ventajas exclusivas</span>
+      <h2 class="section-title">¿Por qué elegir O2?</h2>
+      <p class="section-sub">O2 es la operadora low-cost de Telefónica con las mejores coberturas de la red Movistar.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.5rem">
+      <div class="o2-feature reveal reveal-delay-1">
+        <div class="icon">🚫</div>
+        <h4>Sin permanencia</h4>
+        <p>Libertad total. Cancela o cambia cuando quieras sin penalizaciones.</p>
+      </div>
+      <div class="o2-feature reveal reveal-delay-2">
+        <div class="icon">📡</div>
+        <h4>Red Movistar</h4>
+        <p>Misma cobertura que Movistar, la mejor red de España, a un precio menor.</p>
+      </div>
+      <div class="o2-feature reveal reveal-delay-3">
+        <div class="icon">💰</div>
+        <h4>Precio justo</h4>
+        <p>Tarifas simples y transparentes. Solo pagas por lo que usas.</p>
+      </div>
+      <div class="o2-feature reveal reveal-delay-4">
+        <div class="icon">🤝</div>
+        <h4>Atención personal</h4>
+        <p>Te asesoramos en tienda para que elijas la tarifa perfecta para ti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section style="padding:2rem 2rem 5rem;background:var(--dark)">
+  <div class="container">
+    <div class="map-embed reveal">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3013.0!2d-5.6640!3d40.9650!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQWxhcmPDs24gMiwgU2FsYW1hbmNh!5e0!3m2!1ses!2ses!4v1000000000001" width="100%" height="350" style="border:0" allowfullscreen loading="lazy" title="Mapa Tienda O2 Salamanca"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="MicroShop" style="height:50px;border-radius:8px;margin-bottom:1rem" />
+      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">f</a>
+        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">📷</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Tiendas</h5>
+      <ul>
+        <li><a href="tiendas-movistar.html">Tiendas Movistar</a></li>
+        <li><a href="o2.html">Tienda O2</a></li>
+        <li><a href="telefonica-empresas.html">Empresas</a></li>
+        <li><a href="movilfree.html">MovilFree</a></li>
+      </ul>
+    </div>
+    <div class="footer-col"><h5>Legal</h5><ul><li><a href="https://microshop.info/politica-de-privacidad">Privacidad</a></li><li><a href="https://microshop.info/politica-de-cookies">Cookies</a></li><li><a href="https://microshop.info/aviso-legal">Aviso legal</a></li></ul></div>
+    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="index.html#contacto">Escríbenos</a></li><li><a href="https://instagram.com/microinforsalamanca">Instagram</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 1995–2026 Micro-Infor Salamanca S.L.</span>
+    <div class="footer-bottom-links"><a href="https://microshop.info/politica-de-privacidad">Privacidad</a><a href="https://microshop.info/aviso-legal">Aviso legal</a></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

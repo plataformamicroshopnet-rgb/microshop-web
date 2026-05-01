@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovilFree Salamanca — Telefonía, Reparaciones e Informática</title>
+  <meta name="description" content="MovilFree en Salamanca: telefonía, reparaciones, informática y papelería. Llámanos al 923 347 383." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .mf-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:2.5rem 2rem; text-align:center; transition:border-color var(--transition),transform var(--transition),box-shadow var(--transition); }
+    .mf-service:hover { border-color:#E91E8C; transform:translateY(-6px); box-shadow:0 20px 40px rgba(233,30,140,0.15); }
+    .mf-icon { font-size:3rem; margin-bottom:1.2rem; display:block; }
+    .mf-service h3 { font-size:1.15rem; font-weight:700; margin-bottom:0.8rem; }
+    .mf-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.75; }
+    .call-banner { background:linear-gradient(135deg,#E91E8C22,#7b0040); border:1px solid #E91E8C66; border-radius:var(--radius); padding:4rem 2rem; text-align:center; }
+    .call-banner h2 { font-size:2.2rem; font-weight:900; margin-bottom:1rem; }
+    .call-banner p { color:var(--text-muted); font-size:1.05rem; margin-bottom:2rem; }
+    .call-btn { display:inline-flex; align-items:center; gap:12px; background:#E91E8C; color:#fff; font-size:1.3rem; font-weight:800; padding:1.2rem 3rem; border-radius:var(--radius-sm); text-decoration:none; box-shadow:0 0 50px rgba(233,30,140,0.5); animation:callPulse 2.5s infinite; }
+    @keyframes callPulse { 0%,100% { box-shadow:0 0 30px rgba(233,30,140,0.5); } 50% { box-shadow:0 0 70px rgba(233,30,140,0.8); } }
+    .call-btn:hover { background:#c41577; transform:scale(1.03); }
+  </style>
+</head>
+<body class="theme-movilfree">
+
+<header id="header">
+  <a href="index.html" class="logo">
+    <img src="img/logo.png" alt="MicroShop" style="height:44px;width:auto;border-radius:8px;" />
+  </a>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="tiendas-movistar.html">Tiendas Movistar</a>
+    <a href="o2.html">Tienda O2</a>
+    <a href="telefonica-empresas.html">Empresas</a>
+    <a href="movilfree.html" class="active">MovilFree</a>
+    <a href="index.html#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+</header>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Inicio</a>
+  <a href="tiendas-movistar.html">Tiendas Movistar</a>
+  <a href="o2.html">Tienda O2</a>
+  <a href="telefonica-empresas.html">Empresas</a>
+  <a href="movilfree.html">MovilFree</a>
+  <a href="index.html#contacto" class="btn btn-primary">Contactar</a>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero" style="min-height:60vh">
+  <div class="page-hero-bg" style="background:linear-gradient(135deg,#1a003a 0%,#4a0080 50%,#200050 100%)"></div>
+  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 45%,rgba(100,0,80,0.4))"></div>
+  <div class="page-hero-content">
+    <span class="section-label" style="color:#E91E8C">Tu tienda multiservicios</span>
+    <h1><span style="color:#E91E8C">MovilFree</span><br/>Salamanca</h1>
+    <p>Telefonía, reparaciones de móviles, informática y papelería. Todo en un mismo lugar, con el mejor servicio.</p>
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+      <a href="tel:923347383" class="btn btn-primary" style="background:#E91E8C;box-shadow:0 0 30px rgba(233,30,140,0.4);font-size:1.05rem">📞 923 347 383</a>
+      <a href="index.html#contacto" class="btn btn-secondary">✉️ Escríbenos</a>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<section style="padding:5rem 2rem;background:var(--dark-2)">
+  <div class="container">
+    <div class="reveal text-center" style="margin-bottom:3rem">
+      <span class="section-label" style="color:#E91E8C">Nuestros servicios</span>
+      <h2 class="section-title">Todo lo que necesitas</h2>
+      <p class="section-sub">MovilFree es tu tienda de confianza para tecnología, reparaciones y mucho más en Salamanca.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem">
+      <div class="mf-service reveal reveal-delay-1">
+        <span class="mf-icon">📱</span>
+        <h3>Telefonía</h3>
+        <p>Venta de móviles, accesorios y fundas. Todas las marcas: Samsung, Xiaomi, iPhone y más.</p>
+      </div>
+      <div class="mf-service reveal reveal-delay-2">
+        <span class="mf-icon">🔧</span>
+        <h3>Reparaciones</h3>
+        <p>Reparación de pantallas rotas, baterías, conectores y cualquier avería en tu móvil o tablet.</p>
+      </div>
+      <div class="mf-service reveal reveal-delay-3">
+        <span class="mf-icon">💻</span>
+        <h3>Informática</h3>
+        <p>Venta y reparación de ordenadores portátiles y de sobremesa. Componentes y periféricos.</p>
+      </div>
+      <div class="mf-service reveal reveal-delay-4">
+        <span class="mf-icon">🖨️</span>
+        <h3>Papelería</h3>
+        <p>Material de oficina, impresión, cartuchos de tinta y todo lo que necesitas para tu día a día.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LLÁMAME CTA -->
+<section style="padding:5rem 2rem;background:var(--dark)">
+  <div class="container">
+    <div class="call-banner reveal">
+      <h2>¿Necesitas ayuda?</h2>
+      <p>Llámanos ahora y te atendemos en el momento. Sin esperas, sin citas previas.</p>
+      <a href="tel:923347383" class="call-btn">📞 LLÁMAME — 923 347 383</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="MicroShop" style="height:50px;border-radius:8px;margin-bottom:1rem" />
+      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">f</a>
+        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">📷</a>
+      </div>
+    </div>
+    <div class="footer-col"><h5>Tiendas</h5><ul><li><a href="tiendas-movistar.html">Tiendas Movistar</a></li><li><a href="o2.html">Tienda O2</a></li><li><a href="telefonica-empresas.html">Empresas</a></li><li><a href="movilfree.html">MovilFree</a></li></ul></div>
+    <div class="footer-col"><h5>Legal</h5><ul><li><a href="https://microshop.info/politica-de-privacidad">Privacidad</a></li><li><a href="https://microshop.info/politica-de-cookies">Cookies</a></li><li><a href="https://microshop.info/aviso-legal">Aviso legal</a></li></ul></div>
+    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="tel:923347383">923 347 383</a></li><li><a href="index.html#contacto">Escríbenos</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 1995–2026 Micro-Infor Salamanca S.L.</span>
+    <div class="footer-bottom-links"><a href="https://microshop.info/politica-de-privacidad">Privacidad</a><a href="https://microshop.info/aviso-legal">Aviso legal</a></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
