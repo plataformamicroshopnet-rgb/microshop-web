@@ -14,14 +14,14 @@
     .o2-feature h4 { font-size:1rem; font-weight:700; margin-bottom:0.5rem; }
     .o2-feature p { font-size:0.88rem; color:var(--text-muted); line-height:1.7; }
     .store-main-card { background:var(--dark-3); border:1px solid rgba(51,153,255,0.4); border-radius:var(--radius); overflow:hidden; max-width:700px; margin:0 auto; }
-    .store-main-img { width:100%; height:300px; object-fit:cover; }
+    .store-main-img { width:100%; height:400px; object-fit:contain; background:var(--dark-2); -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%); mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%); }
     .store-main-body { padding:2rem; }
     .store-info-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:1.5rem; }
     .store-info-block p { font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:4px; }
     .store-info-block span, .store-info-block a { font-size:0.95rem; font-weight:600; color:var(--text); }
     .store-info-block a { color:#3399FF; }
     .store-info-block a:hover { color:var(--green); }
-    @media(max-width:600px) { .store-info-grid { grid-template-columns:1fr; } .store-main-img { height:200px; } }
+    @media(max-width:600px) { .store-info-grid { grid-template-columns:1fr; } .store-main-img { height:300px; } }
   </style>
 </head>
 <body class="theme-o2">
@@ -36,7 +36,7 @@
     <a href="o2.html" class="active">Tienda O2</a>
     <a href="telefonica-empresas.html">Empresas</a>
     <a href="movilfree.html">MovilFree</a>
-    <a href="index.html#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
   </nav>
   <button class="hamburger" id="hamburger" aria-label="MenÃº"><span></span><span></span><span></span></button>
 </header>
@@ -46,12 +46,12 @@
   <a href="o2.html">Tienda O2</a>
   <a href="telefonica-empresas.html">Empresas</a>
   <a href="movilfree.html">MovilFree</a>
-  <a href="index.html#contacto" class="btn btn-primary">Contactar</a>
+  <a href="#contacto" class="btn btn-primary">Contactar</a>
 </nav>
 
 <!-- PAGE HERO -->
 <div class="page-hero">
-  <div class="page-hero-bg" style="background-image:url('img/hero-o2.png')"></div>
+  <div class="page-hero-bg" style="background-image:url('img/tienda-o2.jpg')"></div>
   <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 45%,rgba(14,45,108,0.6))"></div>
   <div class="page-hero-content">
     <span class="section-label" style="color:#3399FF">Tienda Oficial Â· Salamanca</span>
@@ -143,6 +143,79 @@
   </div>
 </section>
 
+<!-- -- CONTACT -- -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="section-label">Contacto</span>
+      <h2 class="section-title">Pregúntanos algo</h2>
+      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">??</div>
+          <div class="contact-info-text">
+            <p>Facebook</p>
+            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">??</div>
+          <div class="contact-info-text">
+            <p>Instagram</p>
+            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">??</div>
+          <div class="contact-info-text">
+            <p>Empresa</p>
+            <span>Micro-Infor Salamanca S.L.</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">??</div>
+          <div class="contact-info-text">
+            <p>Fundación</p>
+            <span>1995 — más de 25 años sirviendo a Salamanca</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <form id="contact-form" action="https://formsubmit.co/marta@microshopnet.net" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
+          <div class="form-group">
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="">Selecciona un tema…</option>
+              <option>Tarifas Movistar</option>
+              <option>Tienda O2</option>
+              <option>Telefónica Empresas</option>
+              <option>MovilFree</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <label for="privacidad">Acepto la <a href="https://microshop.info/politica-de-privacidad" target="_blank">política de privacidad</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
@@ -163,7 +236,7 @@
       </ul>
     </div>
     <div class="footer-col"><h5>Legal</h5><ul><li><a href="https://microshop.info/politica-de-privacidad">Privacidad</a></li><li><a href="https://microshop.info/politica-de-cookies">Cookies</a></li><li><a href="https://microshop.info/aviso-legal">Aviso legal</a></li></ul></div>
-    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="index.html#contacto">EscrÃ­benos</a></li><li><a href="https://instagram.com/microinforsalamanca">Instagram</a></li></ul></div>
+    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="#contacto">EscrÃ­benos</a></li><li><a href="https://instagram.com/microinforsalamanca">Instagram</a></li></ul></div>
   </div>
   <div class="footer-bottom">
     <span>Â© 1995â€“2026 Micro-Infor Salamanca S.L.</span>
@@ -173,3 +246,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

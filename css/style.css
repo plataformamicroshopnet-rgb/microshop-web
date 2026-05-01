@@ -613,6 +613,7 @@ footer {
 }
 
 /* O2 COLOR OVERRIDES */
+.theme-o2 .page-hero-bg { background-position: center top; }
 .theme-o2 .btn-primary { background: var(--o2-accent); color: #fff; box-shadow: 0 0 30px rgba(51,153,255,0.3); }
 .theme-o2 .btn-primary:hover { background: #2288ee; }
 .theme-o2 .section-label { color: var(--o2-accent); }
