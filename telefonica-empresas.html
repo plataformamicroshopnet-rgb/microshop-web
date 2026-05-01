@@ -7,9 +7,9 @@
   <meta name="description" content="Soluciones Telefónica para PYMEs y autónomos en Salamanca. Asesoramiento, visitas comerciales y catálogo completo. Tel: 923 500 500." />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    .biz-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.8rem; display:flex; gap:1.2rem; align-items:flex-start; transition:border-color var(--transition),transform var(--transition); }
+    .biz-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.8rem; display:flex; gap:1.2rem; align-items:center; transition:border-color var(--transition),transform var(--transition); }
     .biz-service:hover { border-color:#00A9CE; transform:translateX(6px); }
-    .biz-icon { font-size:2rem; flex-shrink:0; width:52px; height:52px; background:rgba(0,169,206,0.12); border-radius:12px; display:flex; align-items:center; justify-content:center; }
+    .biz-photo { width:80px; height:80px; flex-shrink:0; object-fit:cover; border-radius:12px; border:1px solid rgba(0,169,206,0.2); }
     .biz-service h4 { font-size:1rem; font-weight:700; margin-bottom:0.4rem; }
     .biz-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.7; }
     .cta-banner { background:linear-gradient(135deg,#00A9CE22,#0E2D6C33); border:1px solid #00A9CE44; border-radius:var(--radius); padding:3rem 2rem; text-align:center; }
@@ -29,7 +29,7 @@
     <a href="o2.html">Tienda O2</a>
     <a href="telefonica-empresas.html" class="active">Empresas</a>
     <a href="movilfree.html">MovilFree</a>
-    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+    <a href="index.html#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
   </nav>
   <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
 </header>
@@ -39,7 +39,7 @@
   <a href="o2.html">Tienda O2</a>
   <a href="telefonica-empresas.html">Empresas</a>
   <a href="movilfree.html">MovilFree</a>
-  <a href="#contacto" class="btn btn-primary">Contactar</a>
+  <a href="index.html#contacto" class="btn btn-primary">Contactar</a>
 </nav>
 
 <!-- HERO -->
@@ -66,27 +66,27 @@
     </div>
     <div style="display:flex;flex-direction:column;gap:1.2rem">
       <div class="biz-service reveal">
-        <div class="biz-icon">🌐</div>
+        <img src="img/emp-fibra.png" class="biz-photo" alt="Fibra" loading="lazy" />
         <div><h4>Fibra para empresas</h4><p>Conexiones simétricas hasta 1 Gbps con SLA garantizado, IP fija y soporte técnico prioritario 24/7.</p></div>
       </div>
       <div class="biz-service reveal reveal-delay-1">
-        <div class="biz-icon">📱</div>
+        <img src="img/emp-moviles.png" class="biz-photo" alt="Móviles corporativos" loading="lazy" />
         <div><h4>Líneas móviles corporativas</h4><p>Gestión centralizada de flotas móviles con tarifas especiales por volumen y datos compartidos.</p></div>
       </div>
       <div class="biz-service reveal reveal-delay-2">
-        <div class="biz-icon">☎️</div>
+        <img src="img/emp-centralita.png" class="biz-photo" alt="Centralita virtual" loading="lazy" />
         <div><h4>Centralita virtual</h4><p>Centralita IP en la nube, sin inversión en hardware. Gestiona todas las llamadas de tu empresa desde cualquier dispositivo.</p></div>
       </div>
       <div class="biz-service reveal reveal-delay-3">
-        <div class="biz-icon">☁️</div>
+        <img src="img/emp-cloud.png" class="biz-photo" alt="Soluciones Cloud" loading="lazy" />
         <div><h4>Soluciones Cloud</h4><p>Almacenamiento, videoconferencia y herramientas de colaboración para equipos de cualquier tamaño.</p></div>
       </div>
       <div class="biz-service reveal reveal-delay-4">
-        <div class="biz-icon">🔒</div>
+        <img src="img/emp-seguridad.png" class="biz-photo" alt="Ciberseguridad" loading="lazy" />
         <div><h4>Ciberseguridad</h4><p>Protege los datos de tu empresa con soluciones de seguridad perimetral, antivirus y backup en la nube.</p></div>
       </div>
       <div class="biz-service reveal">
-        <div class="biz-icon">📺</div>
+        <img src="img/emp-tv.png" class="biz-photo" alt="Televisión para negocios" loading="lazy" />
         <div><h4>Televisión para negocios</h4><p>Movistar Plus+ para hostelería, hoteles y espacios comerciales con licencia de comunicación pública.</p></div>
       </div>
     </div>
@@ -101,91 +101,6 @@
       <p>Nuestros asesores se desplazan a tu empresa sin ningún compromiso. Analizamos tu situación actual y te presentamos la mejor solución.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
         <a href="tel:923500500" class="btn btn-primary" style="background:#00A9CE;box-shadow:0 0 30px rgba(0,169,206,0.3);font-size:1rem;padding:1rem 2rem">📞 Llamar: 923 500 500</a>
-        <a href="#contacto" class="btn btn-secondary">✉️ Escríbenos</a>
-      </div>
-    </div>
-    <div style="margin-top:3rem" class="reveal">
-      <div style="text-align:center;margin-bottom:2rem">
-        <span class="section-label" style="color:#00A9CE">Catálogo de productos</span>
-        <h3 class="section-title" style="font-size:1.8rem">Consulta todos nuestros productos</h3>
-      </div>
-      <div style="text-align:center">
-        <a href="https://www.dropbox.com/sh/tfv7vne51c9o8ax/AABBC7m1V_43RRRcuBUEJbRNa?dl=0" target="_blank" rel="noopener" class="btn btn-primary" style="background:#00A9CE;box-shadow:0 0 30px rgba(0,169,206,0.3);font-size:1rem;padding:1rem 2.5rem">
-          📋 Ver catálogo de productos Telefónica Empresas
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- -- CONTACT -- -->
-<section class="contact" id="contacto">
-  <div class="container">
-    <div class="reveal text-center">
-      <span class="section-label">Contacto</span>
-      <h2 class="section-title">Preg�ntanos algo</h2>
-      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telef�nica Empresas. Tambi�n cualquier consulta sobre MicroShop.</p>
-    </div>
-    <div class="contact-wrap">
-      <div class="contact-info reveal reveal-delay-1">
-        <div class="contact-info-item">
-          <div class="contact-info-icon">??</div>
-          <div class="contact-info-text">
-            <p>Facebook</p>
-            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">??</div>
-          <div class="contact-info-text">
-            <p>Instagram</p>
-            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">??</div>
-          <div class="contact-info-text">
-            <p>Empresa</p>
-            <span>Micro-Infor Salamanca S.L.</span>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">??</div>
-          <div class="contact-info-text">
-            <p>Fundaci�n</p>
-            <span>1995 � m�s de 25 a�os sirviendo a Salamanca</span>
-          </div>
-        </div>
-      </div>
-      <div class="reveal reveal-delay-2">
-        <form id="contact-form" action="https://formsubmit.co/diego@microshopnet.net" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
-          <div class="form-group">
-            <label for="email">Tu email</label>
-            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
-          </div>
-          <div class="form-group">
-            <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
-              <option value="">Selecciona un tema�</option>
-              <option>Tarifas Movistar</option>
-              <option>Tienda O2</option>
-              <option>Telef�nica Empresas</option>
-              <option>MovilFree</option>
-              <option>Otro</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="�En qu� podemos ayudarte?" required></textarea>
-          </div>
-          <div class="form-check">
-            <input type="checkbox" id="privacidad" name="privacidad" required />
-            <label for="privacidad">Acepto la <a href="https://microshop.info/politica-de-privacidad" target="_blank">pol�tica de privacidad</a></label>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
-        </form>
       </div>
     </div>
   </div>
@@ -203,7 +118,7 @@
     </div>
     <div class="footer-col"><h5>Tiendas</h5><ul><li><a href="tiendas-movistar.html">Tiendas Movistar</a></li><li><a href="o2.html">Tienda O2</a></li><li><a href="telefonica-empresas.html">Empresas</a></li><li><a href="movilfree.html">MovilFree</a></li></ul></div>
     <div class="footer-col"><h5>Legal</h5><ul><li><a href="https://microshop.info/politica-de-privacidad">Privacidad</a></li><li><a href="https://microshop.info/politica-de-cookies">Cookies</a></li><li><a href="https://microshop.info/aviso-legal">Aviso legal</a></li></ul></div>
-    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="#contacto">Escríbenos</a></li><li><a href="tel:923500500">923 500 500</a></li></ul></div>
+    <div class="footer-col"><h5>Contacto</h5><ul><li><a href="index.html#contacto">Escríbenos</a></li><li><a href="tel:923500500">923 500 500</a></li></ul></div>
   </div>
   <div class="footer-bottom">
     <span>© 1995–2026 Micro-Infor Salamanca S.L.</span>
@@ -213,4 +128,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
-

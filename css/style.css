@@ -365,7 +365,7 @@ section { padding: 6rem 2rem; }
   margin-top: 3rem;
 }
 .why-item {
-  padding: 2rem;
+  padding: 1.5rem;
   background: var(--glass);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius);
@@ -373,6 +373,7 @@ section { padding: 6rem 2rem; }
 }
 .why-item:hover { border-color: var(--green); transform: translateY(-4px); }
 .why-icon { font-size: 2rem; margin-bottom: 1rem; }
+.why-photo { width: 100%; height: 160px; object-fit: cover; border-radius: 8px; margin-bottom: 1.2rem; }
 .why-item h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
 .why-item p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
 
