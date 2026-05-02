@@ -87,7 +87,7 @@ if (contactForm) {
     const formData = new FormData(contactForm);
     const action = contactForm.action;
 
-    if (action && action.includes('formspree')) {
+    if (action && (action.includes('formspree') || action.includes('formsubmit'))) {
       try {
         const res = await fetch(action, {
           method: 'POST',
