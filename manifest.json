@@ -1,0 +1,27 @@
+{
+  "name": "MicroShop",
+  "short_name": "MicroShop",
+  "description": "Distribuidor Oficial Telefónica Movistar y O2 en Salamanca",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090e1a",
+  "theme_color": "#090e1a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
