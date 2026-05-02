@@ -79,7 +79,7 @@ nav a:hover, nav a.active { color: var(--text); background: var(--glass); }
 nav a.active { color: var(--green); }
 
 /* Hamburger */
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: transparent; border: none; }
 .hamburger span {
   display: block; width: 24px; height: 2px;
   background: var(--text);
@@ -601,11 +601,13 @@ footer {
 .reveal-delay-4 { transition-delay: 0.4s; }
 
 /* === RESPONSIVE === */
+.split-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 @media (max-width: 900px) {
   nav { display: none; }
   .hamburger { display: flex; }
   .contact-wrap { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .split-layout { grid-template-columns: 1fr; gap: 2.5rem; }
 }
 @media (max-width: 600px) {
   header { padding: 0 1rem; }
