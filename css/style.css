@@ -438,9 +438,12 @@ section { padding: 6rem 2rem; }
 /* === STORE CARDS === */
 .stores-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   margin-top: 3rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .store-card {
   background: var(--dark-3);
@@ -618,6 +621,7 @@ footer {
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
   .stats-grid { grid-template-columns: 1fr; }
+  .stores-grid { grid-template-columns: 1fr; }
   .brands { padding: 2rem 1rem; }
   .brand-logo { width: 50px; height: 50px; }
   .contact-wrap { gap: 2rem; }
