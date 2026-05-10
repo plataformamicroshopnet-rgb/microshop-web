@@ -630,28 +630,34 @@ footer {
 
 /* === THEME OVERRIDES === */
 
-/* Telefónica Empresas */
+/* Telefónica Empresas (Cyan Tint) */
 body.theme-empresas {
   --blue: #00A9CE;
   --blue-dark: #008ba8;
   --blue-glow: rgba(0, 169, 206, 0.25);
-  --green: #0E2D6C;
-  --green-dark: #091d45;
-  --green-glow: rgba(14, 45, 108, 0.25);
+  --green: #00A9CE;
+  --green-dark: #008ba8;
+  --green-glow: rgba(0, 169, 206, 0.25);
+  --dark: #041014;
+  --dark-2: #081920;
+  --dark-3: #0c232d;
 }
 
-/* O2 */
+/* O2 (Deep Blue Tint) */
 body.theme-o2 {
-  --blue: #0E2D6C;
-  --blue-dark: #091d45;
-  --blue-glow: rgba(14, 45, 108, 0.25);
+  --blue: #3399FF;
+  --blue-dark: #2077d1;
+  --blue-glow: rgba(51, 153, 255, 0.25);
   --green: #3399FF;
   --green-dark: #2077d1;
   --green-glow: rgba(51, 153, 255, 0.25);
+  --dark: #050812;
+  --dark-2: #0a1124;
+  --dark-3: #101833;
 }
 .theme-o2 .page-hero-bg { background-position: center top; }
 
-/* MovilFree */
+/* MovilFree (Fuchsia Gradient) */
 body.theme-movilfree {
   --blue: #E91E8C;
   --blue-dark: #c41577;
@@ -659,7 +665,9 @@ body.theme-movilfree {
   --green: #E91E8C;
   --green-dark: #c41577;
   --green-glow: rgba(233, 30, 140, 0.25);
-  --dark: linear-gradient(135deg, #4A0E2E 0%, #1A000E 100%);
-  background: var(--dark);
+  --dark: transparent;
+  --dark-2: rgba(0, 0, 0, 0.25);
+  --dark-3: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(135deg, #4A0E2E 0%, #1A000E 100%);
   background-attachment: fixed;
 }
