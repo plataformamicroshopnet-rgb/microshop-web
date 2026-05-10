@@ -1,228 +1,317 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Telefónica Empresas Salamanca — MicroShop</title>
-  <meta name="description" content="Soluciones Telefónica para PYMEs y autónomos en Salamanca." />
+
+  <meta name="description" content="Soluciones Telefónica para PYMEs y autónomos en Salamanca. Asesoramiento, visitas comerciales y catálogo completo. Tel: 923 500 500." />
+
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <style>
+
+    .biz-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.8rem; display:flex; gap:1.2rem; align-items:center; transition:border-color var(--transition),transform var(--transition); }
+
+    .biz-service:hover { border-color:#00A9CE; transform:translateX(6px); }
+
+    .biz-photo { width:80px; height:80px; flex-shrink:0; object-fit:cover; border-radius:12px; border:1px solid rgba(0,169,206,0.2); }
+
+    .biz-service h4 { font-size:1rem; font-weight:700; margin-bottom:0.4rem; }
+
+    .biz-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.7; }
+
+    .cta-banner { background:linear-gradient(135deg,#00A9CE22,#0E2D6C33); border:1px solid #00A9CE44; border-radius:var(--radius); padding:3rem 2rem; text-align:center; }
+
+    .cta-banner h3 { font-size:1.8rem; font-weight:800; margin-bottom:1rem; }
+
+    .cta-banner p { color:var(--text-muted); margin-bottom:2rem; }
+
+  </style>
+
+<link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#00A9CE" />
+  <meta name="theme-color" content="#090e1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MicroShop" />
+
+  <meta property="og:title" content="MicroShop - Distribuidor Movistar y O2" />
+  <meta property="og:description" content="Más de 25 años como distribuidor oficial en Salamanca." />
+  <meta property="og:image" content="https://microshopnet.net/img/logo.png" />
+  <meta property="og:url" content="https://microshopnet.net/" />
+  <meta property="og:type" content="website" />
+
+
 </head>
-<body class="theme-empresas">
 
-<header>
-  <div class="header-top">
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
-        <img src="img/logo.png" alt="MicroShop" style="height:40px; border-radius:4px;" />
-        <span style="font-weight: 700; color: #333; font-size: 1.1rem; border-left: 1px solid #ddd; padding-left: 8px; margin-left: 4px;">Empresas</span>
-      </a>
-    </div>
-    
-    <div class="search-bar">
-      <input type="text" placeholder="Busca en Telefónica Empresas..." />
-    </div>
+<body>
 
-    <div class="header-actions">
-      <a href="#contacto" class="action-item">
-        <span style="font-size: 1.2rem; margin-bottom: 2px;">👤</span>
-        Soy cliente
-      </a>
-    </div>
-  </div>
-  
-  <div class="header-nav" style="background: var(--blue); border-top: none;">
-    <a href="index.html" style="color: #fff;">Ofertas</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Fibra y móvil</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Fibra</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Tarifas móvil</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Móviles y dispositivos</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Soluciones digitales</a>
-    <a href="telefonica-empresas.html" style="color: #fff;">Servicios</a>
-  </div>
+
+
+<header id="header">
+
+  <a href="index.html" class="logo">
+
+    <img src="img/logo.png" alt="MicroShop" style="height:60px;width:auto;border-radius:8px;" />
+
+  </a>
+
+  <nav>
+
+    <a href="index.html">Inicio</a>
+
+    <a href="tiendas-movistar.html">Tiendas Movistar</a>
+
+    <a href="o2.html">Tienda O2</a>
+
+    <a href="telefonica-empresas.html" class="active">Empresas</a>
+
+    <a href="movilfree.html">MovilFree</a>
+
+    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+
+  </nav>
+
+  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+
 </header>
 
-<div class="yellow-banner">
-  <span>👤 Contrata o asesórate gratis</span>
-  <a href="#contacto" class="btn btn-outline" style="background:#fff; color:#333; border:none; padding:4px 12px; font-size:0.8rem; margin-left:10px;">Contactar</a>
-</div>
-
 <nav class="mobile-nav" id="mobile-nav">
+
   <a href="index.html">Inicio</a>
+
   <a href="tiendas-movistar.html">Tiendas Movistar</a>
+
+  <a href="o2.html">Tienda O2</a>
+
   <a href="telefonica-empresas.html">Empresas</a>
-  <a href="o2.html">O2</a>
+
   <a href="movilfree.html">MovilFree</a>
+
+  <a href="#contacto" class="btn btn-primary">Contactar</a>
+
 </nav>
 
+
+
 <!-- HERO -->
-<section style="padding: 1rem 2rem 2rem;">
-  <div class="empresas-hero">
-    <div class="empresas-hero-content">
-      <h1 style="font-size: 4rem;">-30%</h1>
-      <h3 style="font-size: 1.8rem; font-weight: 800; color: #333; margin-bottom: 0.5rem;">Fibra 600 Mb y línea móvil con 40 GB</h3>
-      <p style="color: #555; margin-bottom: 1.5rem;">Haz crecer tu negocio con esta oferta limitada</p>
-      <span class="card-badge" style="background: #e0f2fe; color: var(--blue);">Durante 12 meses</span>
-      <div class="banner-price" style="margin-top: 1rem; margin-bottom: 1.5rem;">
-        <span style="font-size: 1.5rem; text-decoration: line-through; color: #999; margin-right: 10px; margin-top: 10px;">50 €</span>
-        34,90 <span class="banner-price-cents" style="font-size: 1.5rem;">€/mes<br/><span style="font-size: 0.75rem; font-weight: normal; color: #777;">IVA no incluido</span></span>
-      </div>
-      <div style="display: flex; gap: 1rem;">
-        <a href="#contacto" class="btn btn-primary">Me interesa</a>
-        <a href="#servicios" class="btn btn-outline" style="border:none; background:transparent;">Más información</a>
-      </div>
+
+<div class="page-hero">
+
+  <div class="page-hero-bg" style="background-image:url('img/hero-empresas.png')"></div>
+
+  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 50%,rgba(0,50,80,0.5))"></div>
+
+  <div class="page-hero-content">
+
+    <span class="section-label" style="color:#00A9CE">Soluciones para PYMEs y Autónomos</span>
+
+    <h1>Telefónica <span style="color:#00A9CE">Empresas</span><br/>en Salamanca</h1>
+
+    <p>Si eres PYME o autónomo, nuestros asesores especializados te ayudan a encontrar la solución tecnológica perfecta para tu negocio.</p>
+
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+
+      <a href="tel:923500500" class="btn btn-primary" style="background:#00A9CE;box-shadow:0 0 30px rgba(0,169,206,0.3)">📞 Solicitar visita: 923 500 500</a>
+
     </div>
-    <img src="img/emp-moviles.png" alt="Empresas" class="empresas-hero-img" style="object-position: top;" />
+
   </div>
 
-  <div class="container" id="servicios">
-    <div class="card-grid">
-      <!-- Card 1 -->
-      <div class="card blue-card">
-        <div class="card-body">
-          <span style="font-size: 2rem; margin-bottom: 1rem; display: block;">🔌</span>
-          <p style="font-weight: 600; margin-bottom: 0.2rem;">Fibra 600 Mb</p>
-          <h3 style="font-size: 1.6rem;">La fibra con la mejor red del mercado</h3>
-          <p style="font-size: 0.8rem; margin-bottom: 1rem;">Sin permanencia</p>
-          <span class="card-badge" style="background: rgba(255,255,255,0.2); color: #fff;">-39%</span>
-          <div class="card-price" style="margin-top: 1rem;">24,90 <span class="card-price-small">€/mes</span></div>
-          <p style="font-size: 0.7rem; margin-top: 0.2rem;">Durante 12 meses. IVA no incluido</p>
-          <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
-            <a href="#contacto" class="btn btn-primary" style="background: #fff; color: var(--blue);">Me interesa</a>
-            <a href="#" style="color: #fff; font-size: 0.8rem; font-weight: 600; text-decoration: underline; margin-top: 10px;">Más información</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="card">
-        <div class="card-img-wrap">
-          <img src="img/emp-fibra.png" alt="Dispositivo Gratis" />
-        </div>
-        <div class="card-body">
-          <span class="card-badge">Dispositivo gratis</span>
-          <h3 style="font-size: 1.4rem;">Fibra 600 Mb y GB ilimitados</h3>
-          <p style="font-size: 0.85rem; color: #555;">Fibra + Móvil + Centralita</p>
-          <span class="card-badge" style="background: #fee2e2; color: #dc2626;">-28%</span>
-          <div style="display: flex; align-items: baseline; gap: 8px; margin-top: auto;">
-            <span style="text-decoration: line-through; color: #999;">110 €</span>
-            <div class="card-price" style="color: var(--blue);">78,80 <span class="card-price-small">€/mes</span></div>
-          </div>
-          <p style="font-size: 0.7rem; color: #777; margin-top: 0.2rem;">Durante 18 meses. IVA no incluido</p>
-          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-            <a href="#contacto" class="btn btn-primary">Me interesa</a>
-            <a href="#" style="color: var(--blue); font-size: 0.8rem; font-weight: 600;">Más información</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="card">
-        <div class="card-img-wrap" style="background: #fff; display:flex; align-items:center; justify-content:center;">
-          <img src="img/emp-cloud.png" alt="MacBook" style="max-height: 150px; object-fit: contain;" />
-        </div>
-        <div class="card-body">
-          <h3 style="font-size: 1.4rem;">Muévete entre tareas y apps a toda velocidad</h3>
-          <p style="font-size: 0.85rem; color: #555;">Desde</p>
-          <div class="card-price" style="margin-top: 0.5rem; color: #333;">16,80 <span class="card-price-small">€/mes</span></div>
-          <p style="font-size: 0.7rem; color: #777; margin-top: 0.2rem;">Duración 36 meses. IVA no incluido</p>
-          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; align-items: center;">
-            <a href="#contacto" class="btn btn-primary">Me interesa</a>
-            <a href="#" style="color: var(--blue); font-size: 0.8rem; font-weight: 600;">Más información</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+</div>
 
-<!-- DEVICES -->
-<section style="background: var(--bg-section);">
+
+
+<!-- SERVICIOS -->
+
+<section style="padding:5rem 2rem;background:var(--dark-2)">
+
   <div class="container">
-    <h2 class="section-title">Móviles y dispositivos</h2>
-    <div class="card-grid">
-      <div class="card" style="text-align: center; border: none;">
-        <img src="img/hl-smartphones.png" alt="Phone" style="height: 180px; object-fit: contain; margin: 1.5rem auto;" />
-        <div class="card-body" style="padding-top: 0;">
-          <h3 style="font-size: 1rem;">Samsung Galaxy A37 5G EE</h3>
-          <div style="display: flex; gap: 5px; justify-content: center; margin: 0.5rem 0;">
-            <span class="card-badge" style="margin: 0;">Novedad</span>
-            <span class="card-badge" style="margin: 0; background: #eef2ff; color: #4338ca;">Envío gratis</span>
-          </div>
-          <p style="font-weight: 700; color: #333; margin-bottom: 0;">9,20 €/mes</p>
-          <p style="font-size: 0.7rem;">Durante 36 meses. IVA no incluido</p>
-        </div>
-      </div>
-      <div class="card" style="text-align: center; border: none;">
-        <img src="img/hl-smartphones.png" alt="Phone" style="height: 180px; object-fit: contain; margin: 1.5rem auto;" />
-        <div class="card-body" style="padding-top: 0;">
-          <h3 style="font-size: 1rem;">Samsung Galaxy A57 5G EE</h3>
-          <div style="display: flex; gap: 5px; justify-content: center; margin: 0.5rem 0;">
-            <span class="card-badge" style="margin: 0;">Novedad</span>
-            <span class="card-badge" style="margin: 0; background: #eef2ff; color: #4338ca;">Envío gratis</span>
-          </div>
-          <p style="font-weight: 700; color: #333; margin-bottom: 0;">11,40 €/mes</p>
-          <p style="font-size: 0.7rem;">Durante 36 meses. IVA no incluido</p>
-        </div>
-      </div>
-      <div class="card" style="text-align: center; border: none;">
-        <img src="img/hl-smartphones.png" alt="Phone" style="height: 180px; object-fit: contain; margin: 1.5rem auto;" />
-        <div class="card-body" style="padding-top: 0;">
-          <h3 style="font-size: 1rem;">iPhone 17e</h3>
-          <div style="display: flex; gap: 5px; justify-content: center; margin: 0.5rem 0;">
-            <span class="card-badge" style="margin: 0; background: #eef2ff; color: #4338ca;">Envío gratis</span>
-          </div>
-          <p style="font-weight: 700; color: #333; margin-bottom: 0;">17,70 €/mes</p>
-          <p style="font-size: 0.7rem;">Durante 36 meses. IVA no incluido</p>
-        </div>
-      </div>
-      <div class="card" style="text-align: center; border: none;">
-        <img src="img/hl-smartphones.png" alt="Phone" style="height: 180px; object-fit: contain; margin: 1.5rem auto;" />
-        <div class="card-body" style="padding-top: 0;">
-          <h3 style="font-size: 1rem;">Xiaomi 17</h3>
-          <div style="display: flex; gap: 5px; justify-content: center; margin: 0.5rem 0;">
-            <span class="card-badge" style="margin: 0; background: #eef2ff; color: #4338ca;">Envío gratis</span>
-          </div>
-          <p style="font-weight: 700; color: #333; margin-bottom: 0;">28,50 €/mes</p>
-          <p style="font-size: 0.7rem;">Durante 36 meses. IVA no incluido</p>
-        </div>
-      </div>
+
+    <div class="reveal text-center" style="margin-bottom:3rem">
+
+      <span class="section-label" style="color:#00A9CE">Lo que ofrecemos</span>
+
+      <h2 class="section-title">Soluciones para tu empresa</h2>
+
+      <p class="section-sub">Desde conectividad hasta comunicaciones unificadas. Todo lo que necesitas para digitalizar tu negocio.</p>
+
     </div>
-    <div style="text-align: center; margin-top: 2rem;">
-      <a href="tiendas-movistar.html" class="btn btn-primary" style="padding: 1rem 2rem;">Ir a la tienda de dispositivos</a>
+
+    <div style="display:flex;flex-direction:column;gap:1.2rem">
+
+      <div class="biz-service reveal">
+
+        <img src="img/emp-fibra.png" class="biz-photo" alt="Fibra" loading="lazy" />
+
+        <div><h4>Fibra para empresas</h4><p>Conexiones simétricas hasta 1 Gbps con SLA garantizado, IP fija y soporte técnico prioritario 24/7.</p></div>
+
+      </div>
+
+      <div class="biz-service reveal reveal-delay-1">
+
+        <img src="img/emp-moviles.png" class="biz-photo" alt="Móviles corporativos" loading="lazy" />
+
+        <div><h4>Líneas móviles corporativas</h4><p>Gestión centralizada de flotas móviles con tarifas especiales por volumen y datos compartidos.</p></div>
+
+      </div>
+
+      <div class="biz-service reveal reveal-delay-2">
+
+        <img src="img/emp-centralita.png" class="biz-photo" alt="Centralita virtual" loading="lazy" />
+
+        <div><h4>Centralita virtual</h4><p>Centralita IP en la nube, sin inversión en hardware. Gestiona todas las llamadas de tu empresa desde cualquier dispositivo.</p></div>
+
+      </div>
+
+      <div class="biz-service reveal reveal-delay-3">
+
+        <img src="img/emp-cloud.png" class="biz-photo" alt="Soluciones Cloud" loading="lazy" />
+
+        <div><h4>Soluciones Cloud</h4><p>Almacenamiento, videoconferencia y herramientas de colaboración para equipos de cualquier tamaño.</p></div>
+
+      </div>
+
+      <div class="biz-service reveal reveal-delay-4">
+
+        <img src="img/emp-seguridad.png" class="biz-photo" alt="Ciberseguridad" loading="lazy" />
+
+        <div><h4>Ciberseguridad</h4><p>Protege los datos de tu empresa con soluciones de seguridad perimetral, antivirus y backup en la nube.</p></div>
+
+      </div>
+
+      <div class="biz-service reveal">
+
+        <img src="img/emp-tv.png" class="biz-photo" alt="Televisión para negocios" loading="lazy" />
+
+        <div><h4>Televisión para negocios</h4><p>Movistar Plus+ para hostelería, hoteles y espacios comerciales con licencia de comunicación pública.</p></div>
+
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- CONTACT -->
-<section id="contacto" style="background: var(--bg-section);">
-  <div class="contact-wrap">
-    <h2 class="section-title" style="margin-bottom: 1rem;">Contrata o asesórate gratis</h2>
-    <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem;">Déjanos tus datos y un experto contactará contigo para resolver dudas o contratar productos.</p>
-    <form action="#" method="POST" style="background: transparent;">
-      <div style="display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
-        <div class="form-group" style="flex: 1; margin-bottom: 0;">
-          <input type="text" placeholder="Teléfono de contacto" required style="background: #fff; border: 1px solid #ddd;" />
-        </div>
-        <div class="form-group" style="flex: 1; margin-bottom: 0;">
-          <input type="text" placeholder="CIF o NIF de empresa" required style="background: #fff; border: 1px solid #ddd;" />
-        </div>
-        <button type="submit" class="btn btn-primary" style="border-radius: 4px; padding: 0.85rem 2rem;">Enviar</button>
+
+
+<!-- CTA VISITA -->
+
+<section style="padding:5rem 2rem;background:var(--dark)">
+
+  <div class="container">
+
+    <div class="reveal cta-banner">
+
+      <h3>¿Quieres que te visitemos?</h3>
+
+      <p>Nuestros asesores se desplazan a tu empresa sin ningún compromiso. Analizamos tu situación actual y te presentamos la mejor solución.</p>
+
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+
+        <a href="tel:923500500" class="btn btn-primary" style="background:#00A9CE;box-shadow:0 0 30px rgba(0,169,206,0.3);font-size:1rem;padding:1rem 2rem">📞 Llamar: 923 500 500</a>
+
       </div>
-      <p style="font-size: 0.75rem; color: #777; text-align: left; margin-top: 0.5rem;">Horario de contacto: L-V de 9 a 18h</p>
-      <p style="font-size: 0.75rem; color: var(--blue); text-align: left; margin-top: 0.5rem; cursor: pointer;">Política de Privacidad ⌄</p>
-    </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- -- CONTACT -- -->
+<!-- ── CONTACT ── -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="section-label">Contacto</span>
+      <h2 class="section-title">Pregúntanos algo</h2>
+      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📘</div>
+          <div class="contact-info-text">
+            <p>Facebook</p>
+            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📸</div>
+          <div class="contact-info-text">
+            <p>Instagram</p>
+            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🏢</div>
+          <div class="contact-info-text">
+            <p>Empresa</p>
+            <span>Micro-Infor Salamanca S.L.</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📅</div>
+          <div class="contact-info-text">
+            <p>Fundación</p>
+            <span>1995 — más de 25 años sirviendo a Salamanca</span>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <form id="contact-form" action="https://formsubmit.co/diego@microshopnet.net" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
+          <input type="hidden" name="_template" value="box">
+          <div class="form-group">
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="">Selecciona un tema…</option>
+              <option>Tarifas Movistar</option>
+              <option>Tienda O2</option>
+              <option>Telefónica Empresas</option>
+              <option>MovilFree</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <label for="privacidad">Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <img src="img/logo.png" alt="MicroShop" style="height:40px; border-radius:4px; margin-bottom:1rem;" />
-      <p style="font-size: 0.85rem; color: #ccc;">Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995.</p>
+      <span class="logo-text">MicroShop</span>
+      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      </div>
     </div>
     <div class="footer-col">
       <h5>Nuestras tiendas</h5>
@@ -254,13 +343,23 @@
   </div>
   <div class="footer-bottom">
     <span>© 1995–2026 Micro-Infor Salamanca S.L. Todos los derechos reservados.</span>
+    <div class="footer-bottom-links">
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </div>
   </div>
 </footer>
 
-<script>
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobile-nav').classList.toggle('open');
-  });
-</script>
+<script src="js/main.js"></script>
+
 </body>
+
 </html>
+
+
+
+
+
+
+

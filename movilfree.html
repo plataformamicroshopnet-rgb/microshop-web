@@ -1,164 +1,315 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>MovilFree Salamanca — Telefonía, Reparaciones e Informática</title>
+
   <meta name="description" content="MovilFree en Salamanca: telefonía, reparaciones, informática y papelería. Llámanos al 923 347 383." />
+
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="/favicon.png" type="image/png" />
+
+  <style>
+
+    .mf-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.5rem; text-align:center; transition:border-color var(--transition),transform var(--transition),box-shadow var(--transition); }
+
+    .mf-service:hover { border-color:#E91E8C; transform:translateY(-6px); box-shadow:0 20px 40px rgba(233,30,140,0.15); }
+
+    .mf-photo { width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:1.2rem; }
+
+    .mf-service h3 { font-size:1.15rem; font-weight:700; margin-bottom:0.8rem; }
+
+    .mf-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.75; }
+
+    .call-banner { background:linear-gradient(135deg,#E91E8C22,#7b0040); border:1px solid #E91E8C66; border-radius:var(--radius); padding:4rem 2rem; text-align:center; }
+
+    .call-banner h2 { font-size:2.2rem; font-weight:900; margin-bottom:1rem; }
+
+    .call-banner p { color:var(--text-muted); font-size:1.05rem; margin-bottom:2rem; }
+
+    .call-btn { display:inline-flex; align-items:center; gap:12px; background:#E91E8C; color:#fff; font-size:1.3rem; font-weight:800; padding:1.2rem 3rem; border-radius:var(--radius-sm); text-decoration:none; box-shadow:0 0 50px rgba(233,30,140,0.5); animation:callPulse 2.5s infinite; }
+
+    @keyframes callPulse { 0%,100% { box-shadow:0 0 30px rgba(233,30,140,0.5); } 50% { box-shadow:0 0 70px rgba(233,30,140,0.8); } }
+
+    .call-btn:hover { background:#c41577; transform:scale(1.03); }
+
+  </style>
+
+<link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#4A0E2E" />
+  <meta name="theme-color" content="#090e1a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="MicroShop" />
+
+  <meta property="og:title" content="MicroShop - Distribuidor Movistar y O2" />
+  <meta property="og:description" content="Más de 25 años como distribuidor oficial en Salamanca." />
+  <meta property="og:image" content="https://microshopnet.net/img/logo.png" />
+  <meta property="og:url" content="https://microshopnet.net/" />
+  <meta property="og:type" content="website" />
+
+
 </head>
+
 <body class="theme-movilfree">
 
-<header>
-  <div class="header-top">
-    <div style="display: flex; align-items: center; gap: 1rem;">
-      <button class="hamburger" id="hamburger" aria-label="Menú">
-        <span></span><span></span><span></span>
-      </button>
-      <a href="index.html" class="logo">
-        <span style="font-weight: 900; color: #fff; font-size: 1.5rem;">MovilFree</span>
-      </a>
-    </div>
-    
-    <div class="search-bar">
-      <input type="text" placeholder="Busca en MovilFree..." />
-    </div>
 
-    <div class="header-actions">
-      <a href="#contacto" class="action-item" style="color: #fff;">
-        <span style="font-size: 1.2rem; margin-bottom: 2px;">👤</span>
-        Contacto
-      </a>
-    </div>
-  </div>
-  
-  <div class="header-nav">
-    <a href="index.html">Ofertas</a>
+
+<header id="header">
+
+  <a href="index.html" class="logo">
+
+    <img src="img/logo-movilfree.png" alt="MovilFree" style="height:68px;width:auto;border-radius:8px;margin-top:4px;" />
+
+  </a>
+
+  <nav>
+
+    <a href="index.html">Inicio</a>
+
     <a href="tiendas-movistar.html">Tiendas Movistar</a>
+
+    <a href="o2.html">Tienda O2</a>
+
     <a href="telefonica-empresas.html">Empresas</a>
-    <a href="o2.html">O2</a>
+
     <a href="movilfree.html" class="active">MovilFree</a>
-  </div>
+
+    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
+
+  </nav>
+
+  <button class="hamburger" id="hamburger" aria-label="Menúú"><span></span><span></span><span></span></button>
+
 </header>
 
 <nav class="mobile-nav" id="mobile-nav">
-  <a href="index.html">Ofertas</a>
+
+  <a href="index.html">Inicio</a>
+
   <a href="tiendas-movistar.html">Tiendas Movistar</a>
+
+  <a href="o2.html">Tienda O2</a>
+
   <a href="telefonica-empresas.html">Empresas</a>
-  <a href="o2.html">O2</a>
+
   <a href="movilfree.html">MovilFree</a>
+
+  <a href="#contacto" class="btn btn-primary">Contactar</a>
+
 </nav>
 
+
+
 <!-- HERO -->
-<section style="padding: 1rem 2rem 3rem;">
-  <div class="home-banner" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
-    <div class="home-banner-content">
-      <span style="display:inline-block; background:var(--movilfree-pink); color:#fff; padding:4px 10px; border-radius:4px; font-size:0.8rem; font-weight:700; margin-bottom:1rem;">Tu tienda multiservicios</span>
-      <h1 style="font-size: 3rem; color: #fff;">MovilFree<br/>Salamanca</h1>
-      <p style="font-weight: 500; color: #e2e8f0;">Telefonía, reparaciones de móviles, informática y papelería. Todo en un mismo lugar, con el mejor servicio.</p>
-      <div style="margin-top: 2rem;">
-        <a href="tel:923347383" class="btn btn-primary" style="font-size: 1.2rem; padding: 1rem 2rem;">📞 923 347 383</a>
-      </div>
+
+<div class="page-hero" style="min-height:60vh">
+
+  <div class="page-hero-bg" style="background-image:url('img/tienda-interior.jpg.jpg'); background-size: cover; background-position: center;"></div>
+
+  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 45%,rgba(100,0,80,0.4))"></div>
+
+  <div class="page-hero-content">
+
+    <span class="section-label" style="color:#E91E8C">Tu tienda multiservicios</span>
+
+    <h1><span style="color:#E91E8C">MovilFree</span><br/>Salamanca</h1>
+
+    <p>Telefonía, reparaciones de móviles, informática y papelería. Todo en un mismo lugar, con el mejor servicio.</p>
+
+    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
+
+      <a href="tel:923347383" class="btn btn-primary" style="background:#E91E8C;box-shadow:0 0 30px rgba(233,30,140,0.4);font-size:1.05rem">📞 923 347 383</a>
+
     </div>
-    <div style="flex:1; text-align:right;">
-      <!-- Using generic icon or placeholder if image is dark -->
-      <span style="font-size: 8rem; color: rgba(255,255,255,0.2);">🔧</span>
-    </div>
+
   </div>
-</section>
+
+</div>
+
+
 
 <!-- SERVICIOS -->
-<section style="padding: 4rem 2rem;">
+
+<section style="padding:5rem 2rem;background:var(--dark-2)">
+
   <div class="container">
-    <h2 class="section-title" style="color: #fff;">Todo lo que necesitas</h2>
-    
-    <div class="card-grid">
-      <!-- Servicio 1 -->
-      <div class="card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
-        <div class="card-img-wrap" style="background: rgba(0,0,0,0.2);">
-          <img src="img/mf-telefonia.png" alt="Telefonía" loading="lazy" style="object-fit: contain; padding: 1rem;" />
-        </div>
-        <div class="card-body" style="color: #fff;">
-          <h3>Telefonía</h3>
-          <p style="color: #cbd5e1;">Venta de móviles, accesorios y fundas. Todas las marcas: Samsung, Xiaomi, iPhone y más.</p>
-        </div>
-      </div>
 
-      <!-- Servicio 2 -->
-      <div class="card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
-        <div class="card-img-wrap" style="background: rgba(0,0,0,0.2);">
-          <img src="img/mf-reparaciones.png" alt="Reparaciones" loading="lazy" style="object-fit: contain; padding: 1rem;" />
-        </div>
-        <div class="card-body" style="color: #fff;">
-          <h3>Reparaciones</h3>
-          <p style="color: #cbd5e1;">Reparación de pantallas rotas, baterías, conectores y cualquier avería en tu móvil o tablet.</p>
-        </div>
-      </div>
+    <div class="reveal text-center" style="margin-bottom:3rem">
 
-      <!-- Servicio 3 -->
-      <div class="card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
-        <div class="card-img-wrap" style="background: rgba(0,0,0,0.2);">
-          <img src="img/mf-informatica.png" alt="Informática" loading="lazy" style="object-fit: contain; padding: 1rem;" />
-        </div>
-        <div class="card-body" style="color: #fff;">
-          <h3>Informática</h3>
-          <p style="color: #cbd5e1;">Venta y reparación de ordenadores portátiles y de sobremesa. Componentes y periféricos.</p>
-        </div>
-      </div>
+      <span class="section-label" style="color:#E91E8C">Nuestros servicios</span>
 
-      <!-- Servicio 4 -->
-      <div class="card" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1);">
-        <div class="card-img-wrap" style="background: rgba(0,0,0,0.2);">
-          <img src="img/mf-papeleria.png" alt="Papelería" loading="lazy" style="object-fit: contain; padding: 1rem;" />
-        </div>
-        <div class="card-body" style="color: #fff;">
-          <h3>Papelería</h3>
-          <p style="color: #cbd5e1;">Material de oficina, impresión, cartuchos de tinta y todo lo que necesitas para tu día a día.</p>
-        </div>
-      </div>
+      <h2 class="section-title">Todo lo que necesitas</h2>
+
+      <p class="section-sub">MovilFree es tu tienda de confianza para tecnología, reparaciones y mucho más en Salamanca.</p>
+
     </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem">
+
+      <div class="mf-service reveal reveal-delay-1">
+
+        <img src="img/mf-telefonia.png" alt="Telefonía" class="mf-photo" loading="lazy" />
+
+        <h3>Telefonía</h3>
+
+        <p>Venta de móviles, accesorios y fundas. Todas las marcas: Samsung, Xiaomi, iPhone y más.</p>
+
+      </div>
+
+      <div class="mf-service reveal reveal-delay-2">
+
+        <img src="img/mf-reparaciones.png" alt="Reparaciones" class="mf-photo" loading="lazy" />
+
+        <h3>Reparaciones</h3>
+
+        <p>Reparación de pantallas rotas, baterías, conectores y cualquier avería en tu móvil o tablet.</p>
+
+      </div>
+
+      <div class="mf-service reveal reveal-delay-3">
+
+        <img src="img/mf-informatica.png" alt="Informática" class="mf-photo" loading="lazy" />
+
+        <h3>Informática</h3>
+
+        <p>Venta y reparación de ordenadores portátiles y de sobremesa. Componentes y periféricos.</p>
+
+      </div>
+
+      <div class="mf-service reveal reveal-delay-4">
+
+        <img src="img/mf-papeleria.png" alt="Papelería" class="mf-photo" loading="lazy" />
+
+        <h3>Papelería</h3>
+
+        <p>Material de oficina, impresión, cartuchos de tinta y todo lo que necesitas para tu día a día.</p>
+
+      </div>
+
+    </div>
+
   </div>
+
 </section>
 
-<!-- CALL BANNER -->
-<section style="padding: 2rem 2rem 6rem;">
+
+
+<!-- LLÁMAME CTA -->
+
+<section style="padding:5rem 2rem;background:var(--dark)">
+
   <div class="container">
-    <div style="background: rgba(0,0,0,0.4); border: 1px solid var(--movilfree-pink); border-radius: var(--radius); padding: 4rem 2rem; text-align: center;">
-      <h2 style="font-size: 2.2rem; font-weight: 900; color: #fff; margin-bottom: 1rem;">¿Necesitas ayuda?</h2>
-      <p style="color: #cbd5e1; font-size: 1.05rem; margin-bottom: 2rem;">Llámanos ahora y te atendemos en el momento. Sin esperas, sin citas previas.</p>
-      <a href="tel:923347383" class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem;">📞 LLÁMAME — 923 347 383</a>
+
+    <div class="call-banner reveal">
+
+      <h2>¿Necesitas ayuda?</h2>
+
+      <p>Llámanos ahora y te atendemos en el momento. Sin esperas, sin citas previas.</p>
+
+      <a href="tel:923347383" class="call-btn">📞 LLÁMAME — 923 347 383</a>
+
     </div>
+
   </div>
+
 </section>
 
-<!-- FOOTER CONTACT -->
-<section class="footer-contact" id="contacto">
-  <div class="contact-wrap">
-    <h2 class="section-title" style="color: #fff;">Pregúntanos algo</h2>
-    <p style="color: #cbd5e1; margin-bottom: 2rem;">Resolvemos tus dudas sobre productos y reparaciones.</p>
-    <form action="#" method="POST">
-      <div class="form-group">
-        <input type="email" placeholder="Tu email" required />
+
+
+<!-- ── CONTACT ── -->
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="contacto">
+  <div class="container">
+    <div class="reveal text-center">
+      <span class="section-label">Contacto</span>
+      <h2 class="section-title">Pregúntanos algo</h2>
+      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal reveal-delay-1">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📘</div>
+          <div class="contact-info-text">
+            <p>Facebook</p>
+            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📸</div>
+          <div class="contact-info-text">
+            <p>Instagram</p>
+            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">🏢</div>
+          <div class="contact-info-text">
+            <p>Empresa</p>
+            <span>Micro-Infor Salamanca S.L.</span>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">📅</div>
+          <div class="contact-info-text">
+            <p>Fundación</p>
+            <span>1995 — más de 25 años sirviendo a Salamanca</span>
+          </div>
+        </div>
       </div>
-      <div class="form-group">
-        <textarea placeholder="¿En qué podemos ayudarte?" rows="4" required></textarea>
+      <div class="reveal reveal-delay-2">
+        <form id="contact-form" action="https://formsubmit.co/marta@microshopnet.net" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
+          <input type="hidden" name="_template" value="box">
+          <div class="form-group">
+            <label for="email">Tu email</label>
+            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <select id="asunto" name="asunto">
+              <option value="">Selecciona un tema…</option>
+              <option>Tarifas Movistar</option>
+              <option>Tienda O2</option>
+              <option>Telefónica Empresas</option>
+              <option>MovilFree</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <label for="privacidad">Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a></label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+        </form>
       </div>
-      <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar mensaje</button>
-    </form>
+    </div>
   </div>
 </section>
 
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <h3 style="font-size: 2rem; font-weight: 900; margin-bottom: 1rem; color: #fff;">MovilFree</h3>
-      <p style="font-size: 0.85rem; color: #cbd5e1;">Tu tienda multiservicios de confianza en Salamanca.</p>
+      <span class="logo-text">MicroShop</span>
+      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
+      </div>
     </div>
     <div class="footer-col">
-      <h5 style="color: #fff;">Nuestras tiendas</h5>
+      <h5>Nuestras tiendas</h5>
       <ul>
         <li><a href="tiendas-movistar.html">Tiendas Movistar</a></li>
         <li><a href="o2.html">Tienda O2</a></li>
@@ -167,15 +318,17 @@
       </ul>
     </div>
     <div class="footer-col">
-      <h5 style="color: #fff;">Servicios</h5>
+      <h5>Servicios</h5>
       <ul>
+        <li><a href="tiendas-movistar.html">Fibra y ADSL</a></li>
+        <li><a href="tiendas-movistar.html">Telefonía móvil</a></li>
+        <li><a href="tiendas-movistar.html">Televisión</a></li>
+        <li><a href="telefonica-empresas.html">Soluciones empresariales</a></li>
         <li><a href="movilfree.html">Reparaciones</a></li>
-        <li><a href="movilfree.html">Telefonía</a></li>
-        <li><a href="movilfree.html">Informática</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h5 style="color: #fff;">Legal</h5>
+      <h5>Legal</h5>
       <ul>
         <li><a href="politica-privacidad.html">Política de privacidad</a></li>
         <li><a href="politica-cookies.html">Política de cookies</a></li>
@@ -183,15 +336,30 @@
       </ul>
     </div>
   </div>
-  <div class="footer-bottom" style="border-color: rgba(255,255,255,0.1);">
+  <div class="footer-bottom">
     <span>© 1995–2026 Micro-Infor Salamanca S.L. Todos los derechos reservados.</span>
+    <div class="footer-bottom-links">
+      <a href="politica-privacidad.html">Privacidad</a>
+      <a href="politica-cookies.html">Cookies</a>
+      <a href="aviso-legal.html">Aviso legal</a>
+    </div>
   </div>
 </footer>
 
-<script>
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobile-nav').classList.toggle('open');
-  });
-</script>
+
+
+<script src="js/main.js"></script>
+
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
