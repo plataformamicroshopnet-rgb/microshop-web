@@ -49,16 +49,18 @@
 </nav>
 
 <!-- HERO FUCHSIA -->
-<section style="background: #fff; padding: 4rem 2rem;">
-  <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 3rem; max-width: 1200px; margin: 0 auto;">
-    <div style="flex: 1; min-width: 300px; padding-right: 2rem;">
+<section style="padding: 0; position: relative;">
+  <div style="border-radius: 0; max-width: 100%; margin: 0; padding: 8rem 4rem; position: relative; overflow: hidden; background: #fdf5f9;">
+    <!-- Background image -->
+    <div style="position: absolute; right: 0; top: 0; width: 60%; height: 100%; background: url('img/hero_movilfree_cinematic.png') center/cover no-repeat;"></div>
+    <!-- Fade gradient so text is readable -->
+    <div style="position: absolute; left: 0; top: 0; width: 60%; height: 100%; background: linear-gradient(to right, #fdf5f9 60%, transparent 100%);"></div>
+    
+    <div style="position: relative; z-index: 2; max-width: 600px;">
       <span style="color: #E91E8C; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display:inline-block; margin-bottom:1rem; padding:4px 12px; background:rgba(233,30,140,0.1); border-radius:50px;">Tu tienda multiservicios</span>
       <h1 style="font-size: 3.5rem; font-weight: 900; color: #1a1a1a; margin: 0.5rem 0 1rem; line-height:1.1;">MovilFree<br/>Salamanca</h1>
       <p style="color: #555; font-size: 1.15rem; max-width: 500px; margin-bottom:2rem;">Telefonía, reparaciones de móviles, informática y papelería. Todo en un mismo lugar, con el mejor servicio.</p>
       <a href="tel:923347383" class="btn" style="background: #E91E8C; color: #fff; padding: 1rem 2.5rem; border-radius: 50px; font-weight: bold; font-size:1.1rem; box-shadow: 0 10px 30px rgba(233,30,140,0.3);">📞 923 347 383</a>
-    </div>
-    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-      <img src="img/hero_movilfree_cinematic.png" alt="MovilFree Interior" style="max-width: 100%; height: auto; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.1);" />
     </div>
   </div>
 </section>

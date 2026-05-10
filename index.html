@@ -51,16 +51,18 @@
 </nav>
 
 <!-- ── HERO ── -->
-<section style="background: #fff; padding: 4rem 2rem;">
-  <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 3rem; max-width: 1200px; margin: 0 auto;">
-    <div style="flex: 1; min-width: 300px; padding-right: 2rem;">
+<section style="padding: 0; position: relative;">
+  <div style="border-radius: 0; max-width: 100%; margin: 0; padding: 8rem 4rem; position: relative; overflow: hidden; background: #f5f6f8;">
+    <!-- Background image -->
+    <div style="position: absolute; right: 0; top: 0; width: 60%; height: 100%; background: url('img/hero_home_cinematic.png') center/cover no-repeat;"></div>
+    <!-- Fade gradient so text is readable -->
+    <div style="position: absolute; left: 0; top: 0; width: 60%; height: 100%; background: linear-gradient(to right, #f5f6f8 60%, transparent 100%);"></div>
+    
+    <div style="position: relative; z-index: 2; max-width: 600px;">
       <span style="color: #019DF4; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; display:inline-block; margin-bottom:1rem; padding:4px 12px; background:rgba(1,157,244,0.1); border-radius:50px;">Distribuidores Oficiales desde 1995</span>
       <h1 style="font-size: 3.5rem; font-weight: 900; color: #1a1a1a; margin: 0.5rem 0 1rem; line-height:1.1;">Tu tecnología<br/><span style="color:#8DC63F;">Movistar</span> y <span style="color:#019DF4;">O2</span><br/>en Salamanca</h1>
       <p style="color: #555; font-size: 1.15rem; max-width: 500px; margin-bottom:2rem;">Más de 25 años y 30.000 clientes satisfechos nos avalan como el distribuidor número&nbsp;1 de Telefónica Movistar y O2 en Salamanca.</p>
       <a href="tiendas-movistar.html" class="btn" style="background: #019DF4; color: #fff; padding: 1rem 2rem; border-radius: 8px; font-weight: bold; font-size:1.05rem; box-shadow: 0 10px 20px rgba(1,157,244,0.2);">📍 Ver nuestras tiendas</a>
-    </div>
-    <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-      <img src="img/hero_home_cinematic.png" alt="Tecnología" style="max-width: 100%; height: auto; border-radius: 24px; box-shadow: 0 20px 50px rgba(0,0,0,0.1);" />
     </div>
   </div>
 </section>
