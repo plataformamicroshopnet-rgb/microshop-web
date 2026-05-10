@@ -1,325 +1,194 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Tienda O2 Salamanca — MicroShop</title>
-
   <meta name="description" content="Contrata O2 en Salamanca. Fibra y móvil al mejor precio con la mayor red de España. Sin permanencia. Tel: 923 21 77 70." />
-
-  <link rel="stylesheet" href="css/style.css?v=2" />
-
-  <style>
-
-    .o2-feature { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.5rem; text-align:center; transition:transform var(--transition); }
-
-    .o2-feature:hover { transform:translateY(-5px); }
-
-    .o2-photo { width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:1.2rem; }
-
-    .store-main-img { width:100%; height:450px; object-fit:cover; border-radius:var(--radius); box-shadow:0 20px 40px rgba(0,0,0,0.4); }
-
-  </style>
-
-<link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#090e1a" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="MicroShop" />
-
-  <meta property="og:title" content="MicroShop - Distribuidor Movistar y O2" />
-  <meta property="og:description" content="Más de 25 años como distribuidor oficial en Salamanca." />
-  <meta property="og:image" content="https://microshopnet.net/img/logo.png" />
-  <meta property="og:url" content="https://microshopnet.net/" />
-  <meta property="og:type" content="website" />
-
-
+  <meta name="theme-color" content="#0E2D6C" />
 </head>
-
 <body class="theme-o2">
 
+<!-- LIGHT THEME HEADER -->
+<header>
+  <div class="header-top" style="background: #0055ff; padding: 0 2rem;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="o2.html" class="logo" style="display: flex; align-items: center;">
+        <!-- Using text for O2 logo as per screenshot -->
+        <span style="font-weight: 900; color: #fff; font-size: 2.2rem; margin-right: 2rem; letter-spacing: -1px;">O<span style="font-size: 1.2rem; vertical-align: bottom;">2</span></span>
+      </a>
+    </div>
+    
+    <div class="header-nav" style="background: transparent; border: none; flex: 1; justify-content: flex-start; gap: 1.5rem;">
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Fibra y Móvil</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Fibra, Móvil y TV</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Fibra</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Tarifa Móvil</a>
+      <span style="color: rgba(255,255,255,0.4)">|</span>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Móviles y dispositivos</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Sobre O2</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Ayuda</a>
+      <a href="#contacto" style="color: #fff; font-weight: 500;">Contacto</a>
+    </div>
 
-
-<header id="header">
-
-  <a href="index.html" class="logo">
-
-    <img src="img/logo.png" alt="MicroShop" style="height:60px;width:auto;border-radius:8px;" />
-
-  </a>
-
-  <nav>
-
-    <a href="index.html">Inicio</a>
-
-    <a href="tiendas-movistar.html">Tiendas Movistar</a>
-
-    <a href="o2.html" class="active">Tienda O2</a>
-
-    <a href="telefonica-empresas.html">Empresas</a>
-
-    <a href="movilfree.html">MovilFree</a>
-
-    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
-
-  </nav>
-
-  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
-
+    <div class="header-actions">
+      <a href="#contacto" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5); color:#fff; padding:6px 16px; font-size:0.85rem; border-radius: 4px; font-weight: 500;">Soy cliente</a>
+    </div>
+  </div>
 </header>
 
 <nav class="mobile-nav" id="mobile-nav">
-
   <a href="index.html">Inicio</a>
-
   <a href="tiendas-movistar.html">Tiendas Movistar</a>
-
   <a href="o2.html">Tienda O2</a>
-
   <a href="telefonica-empresas.html">Empresas</a>
-
   <a href="movilfree.html">MovilFree</a>
-
   <a href="#contacto" class="btn btn-primary">Contactar</a>
-
 </nav>
 
-
-
-<!-- HERO -->
-
-<div class="page-hero" style="min-height:50vh">
-
-  <div class="page-hero-bg" style="background-image:url('img/hero-o2.png')"></div>
-
-  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.95) 40%,rgba(51,153,255,0.2))"></div>
-
-  <div class="page-hero-content">
-
-    <span class="section-label" style="color:var(--green)">Solo Fibra y Móvil</span>
-
-    <h1>La tienda <span style="color:var(--green)">O2</span><br/>en Salamanca</h1>
-
-    <p>Respira. Contrata la operadora que no te molesta, con la mayor cobertura y el mejor precio. Visítanos en nuestra tienda O2 oficial.</p>
-
-    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-
-      <a href="tel:923217770" class="btn btn-primary" style="color:#090e1a">📞 923 21 77 70</a>
-
+<!-- HERO (Using user text + Bear Image) -->
+<section style="padding: 0; background: #e5e5e5; position: relative;">
+  <div class="o2-hero" style="border-radius: 0; max-width: 100%; margin: 0; padding: 8rem 4rem; position: relative; overflow: hidden; background: #d2c8bc;">
+    <!-- Bear background -->
+    <div style="position: absolute; right: 0; top: 0; width: 60%; height: 100%; background: url('img/oso-o2.png') center/cover no-repeat;"></div>
+    <!-- Fade gradient so text is readable -->
+    <div style="position: absolute; left: 0; top: 0; width: 60%; height: 100%; background: linear-gradient(to right, #d2c8bc 60%, transparent 100%);"></div>
+    
+    <div class="o2-hero-content" style="position: relative; z-index: 2; max-width: 600px;">
+      <!-- USER'S TEXT PRESERVED -->
+      <p style="font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 500; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Solo Fibra y Móvil</p>
+      <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem; font-weight: 900; color: #fff; line-height: 1.1; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">La tienda O2 en Salamanca</h1>
+      <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">Respira. Contrata la operadora que no te molesta, con la mayor cobertura y el mejor precio. Visítanos en nuestra tienda O2 oficial.</p>
+      <a href="tel:923217770" class="btn btn-primary" style="background: #0055ff; color: #fff; border-radius: 50px; font-size: 1.1rem; padding: 0.8rem 2rem;">📞 923 21 77 70</a>
     </div>
-
   </div>
-
-</div>
-
-
-
-<!-- TIENDA DETALLE -->
-
-<section style="padding:5rem 2rem;background:var(--dark-2)">
-
-  <div class="container split-layout">
-
-    <div class="reveal">
-
-      <h2 style="font-size:2.5rem;font-weight:900;margin-bottom:1.5rem">Tu punto O2<br/>en Calle Alarcón</h2>
-
-      <p style="color:var(--text-muted);font-size:1.1rem;line-height:1.8;margin-bottom:2rem">Te ayudamos con tu portabilidad a O2, a elegir tu tarifa de fibra y móvil, y a resolver cualquier duda. Todo el trámite en persona, de forma clara y sin letra pequeña.</p>
-
-      
-
-      <div style="background:var(--dark-3);padding:2rem;border-radius:var(--radius);border:1px solid var(--glass-border);margin-bottom:2rem">
-
-        <h4 style="margin-bottom:1rem;color:var(--green);font-weight:700">📍 O2 Store Salamanca</h4>
-
-        <ul style="list-style:none;color:var(--text-muted);display:flex;flex-direction:column;gap:0.8rem">
-
-          <li><strong>Dirección:</strong> Calle Alarcón Nº2 37006</li>
-
-          <li><strong>Horario:</strong> L-V: 10:00 - 14:00 y 17:00 - 20:30<br/>Sábados: 10:00 - 14:00</li>
-
-          <li><strong>Teléfono:</strong> <a href="tel:923217770" style="color:#fff;text-decoration:none">923 21 77 70</a></li>
-
-        </ul>
-
-      </div>
-
-      <a href="https://maps.app.goo.gl/kX317gE4eQ7xM2FcA" target="_blank" class="btn btn-secondary">Cómo llegar (Google Maps)</a>
-
-    </div>
-
-    <div class="reveal reveal-right">
-
-      <img src="img/tienda-o2.jpg" alt="Interior tienda O2 Salamanca" class="store-main-img" style="mask-image: radial-gradient(circle, black 60%, transparent 100%); -webkit-mask-image: radial-gradient(circle, black 60%, transparent 100%); object-position: center;" />
-
-    </div>
-
-  </div>
-
 </section>
 
+<!-- TIENDA DETALLE (Light theme card) -->
+<section style="background: #f5f6f8; padding: 4rem 2rem;">
+  <div class="container split-layout" style="align-items: center;">
+    <div>
+      <!-- USER'S TEXT PRESERVED -->
+      <h2 style="font-size:2.5rem;font-weight:900;margin-bottom:1.5rem; color: #1a1a1a;">Tu punto O2<br/>en Calle Alarcón</h2>
+      <p style="color:#555;font-size:1.1rem;line-height:1.8;margin-bottom:2rem">Te ayudamos con tu portabilidad a O2, a elegir tu tarifa de fibra y móvil, y a resolver cualquier duda. Todo el trámite en persona, de forma clara y sin letra pequeña.</p>
+      
+      <div style="background:#fff;padding:2rem;border-radius:20px;border:none;box-shadow:0 10px 30px rgba(0,0,0,0.05);margin-bottom:2rem">
+        <h4 style="margin-bottom:1rem;color:#0055ff;font-weight:700">📍 O2 Store Salamanca</h4>
+        <ul style="list-style:none;color:#555;display:flex;flex-direction:column;gap:0.8rem">
+          <li><strong>Dirección:</strong> Calle Alarcón Nº2 37006</li>
+          <li><strong>Horario:</strong> L-V: 10:00 - 14:00 y 17:00 - 20:30<br/>Sábados: 10:00 - 14:00</li>
+          <li><strong>Teléfono:</strong> <a href="tel:923217770" style="color:#0055ff;font-weight:600;">923 21 77 70</a></li>
+        </ul>
+      </div>
+      <a href="https://maps.app.goo.gl/kX317gE4eQ7xM2FcA" target="_blank" class="btn btn-outline" style="border-color:#0055ff; color:#0055ff;">Cómo llegar (Google Maps)</a>
+    </div>
+    <div>
+      <img src="img/tienda-o2.jpg" alt="Interior tienda O2 Salamanca" style="width:100%; height:450px; object-fit:cover; border-radius:20px; box-shadow:0 20px 40px rgba(0,0,0,0.1);" />
+    </div>
+  </div>
+</section>
 
-
-<!-- CARACTERÍSTICAS -->
-
-<section style="padding:5rem 2rem;background:var(--dark)">
-
+<!-- CARACTERÍSTICAS (Light theme cards) -->
+<section style="background: #fff; padding: 5rem 2rem;">
   <div class="container">
-
-    <div class="reveal text-center" style="margin-bottom:3rem">
-
-      <span class="section-label" style="color:var(--green)">Ventajas exclusivas</span>
-
-      <h2 class="section-title">¿Por qué elegir O2?</h2>
-
-      <p class="section-sub">O2 es la operadora low-cost de Telefónica con las mejores coberturas de la red Movistar.</p>
-
+    <div style="text-align:center; margin-bottom:3rem">
+      <span style="color:#0055ff; font-weight: 700;">Ventajas exclusivas</span>
+      <h2 style="font-size: 2.5rem; font-weight: 900; color: #1a1a1a; margin-top: 0.5rem;">¿Por qué elegir O2?</h2>
+      <p style="color: #555;">O2 es la operadora low-cost de Telefónica con las mejores coberturas de la red Movistar.</p>
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem">
-
-      <div class="o2-feature reveal reveal-delay-1">
-
-        <img src="img/o2-permanencia.png" alt="Sin permanencia" class="o2-photo" loading="lazy" />
-
-        <h4>Sin permanencia</h4>
-
-        <p>Libertad total. Cancela o cambia cuando quieras sin penalizaciones.</p>
-
+      <!-- Feature 1 -->
+      <div style="background: #f9f9fb; padding: 2.5rem 1.5rem; border-radius: 20px; text-align: center; transition: transform 0.3s;">
+        <img src="img/o2-permanencia.png" alt="Sin permanencia" style="width:100px; height:100px; margin: 0 auto 1.5rem; object-fit:contain; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));" loading="lazy" />
+        <h4 style="color:#1a1a1a; font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Sin permanencia</h4>
+        <p style="color:#555; font-size: 0.9rem;">Libertad total. Cancela o cambia cuando quieras sin penalizaciones.</p>
       </div>
-
-      <div class="o2-feature reveal reveal-delay-2">
-
-        <img src="img/o2-red.png" alt="Red Movistar" class="o2-photo" loading="lazy" />
-
-        <h4>Red Movistar</h4>
-
-        <p>Misma cobertura que Movistar, la mejor red de España, a un precio menor.</p>
-
+      <!-- Feature 2 -->
+      <div style="background: #f9f9fb; padding: 2.5rem 1.5rem; border-radius: 20px; text-align: center; transition: transform 0.3s;">
+        <img src="img/o2-red.png" alt="Red Movistar" style="width:100px; height:100px; margin: 0 auto 1.5rem; object-fit:contain; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));" loading="lazy" />
+        <h4 style="color:#1a1a1a; font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Red Movistar</h4>
+        <p style="color:#555; font-size: 0.9rem;">Misma cobertura que Movistar, la mejor red de España, a un precio menor.</p>
       </div>
-
-      <div class="o2-feature reveal reveal-delay-3" style="border-color:var(--green);box-shadow:0 0 20px rgba(51,153,255,0.1)">
-
-        <img src="img/o2-precio.png" alt="Precio justo" class="o2-photo" loading="lazy" />
-
-        <h4>Precio justo</h4>
-
-        <p>Tarifas simples y transparentes. Solo pagas por lo que usas.</p>
-
+      <!-- Feature 3 -->
+      <div style="background: #fff; padding: 2.5rem 1.5rem; border-radius: 20px; text-align: center; border: 2px solid #0055ff; box-shadow: 0 10px 30px rgba(0,85,255,0.15); transform: translateY(-10px);">
+        <img src="img/o2-precio.png" alt="Precio justo" style="width:100px; height:100px; margin: 0 auto 1.5rem; object-fit:contain; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));" loading="lazy" />
+        <h4 style="color:#1a1a1a; font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Precio justo</h4>
+        <p style="color:#555; font-size: 0.9rem;">Tarifas simples y transparentes. Solo pagas por lo que usas.</p>
       </div>
-
-      <div class="o2-feature reveal reveal-delay-4">
-
-        <img src="img/o2-atencion.png" alt="Atención personal" class="o2-photo" loading="lazy" />
-
-        <h4>Atención personal</h4>
-
-        <p>Te asesoramos en tienda para que elijas la tarifa perfecta para ti.</p>
-
+      <!-- Feature 4 -->
+      <div style="background: #f9f9fb; padding: 2.5rem 1.5rem; border-radius: 20px; text-align: center; transition: transform 0.3s;">
+        <img src="img/o2-atencion.png" alt="Atención personal" style="width:100px; height:100px; margin: 0 auto 1.5rem; object-fit:contain; filter: drop-shadow(0 10px 10px rgba(0,0,0,0.1));" loading="lazy" />
+        <h4 style="color:#1a1a1a; font-weight: 800; font-size: 1.1rem; margin-bottom: 0.5rem;">Atención personal</h4>
+        <p style="color:#555; font-size: 0.9rem;">Te asesoramos en tienda para que elijas la tarifa perfecta para ti.</p>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- -- CONTACT -- -->
-<!-- ── CONTACT ── -->
-<section class="contact" id="contacto">
+<!-- CONTACTO (Light theme wrap) -->
+<section class="contact" id="contacto" style="background: #f5f6f8;">
   <div class="container">
-    <div class="reveal text-center">
-      <span class="section-label">Contacto</span>
-      <h2 class="section-title">Pregúntanos algo</h2>
-      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span style="color: #0055ff; font-weight: 700;">Contacto</span>
+      <h2 style="font-size: 2.5rem; font-weight: 900; color: #1a1a1a; margin-top: 0.5rem;">Pregúntanos algo</h2>
+      <p style="color: #555;">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
     </div>
-    <div class="contact-wrap">
-      <div class="contact-info reveal reveal-delay-1">
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📘</div>
-          <div class="contact-info-text">
-            <p>Facebook</p>
-            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
-          </div>
+    <div class="contact-wrap" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <div style="background: #fff; padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">📘</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Facebook</p><a style="color:#1a1a1a; font-weight: 600;" href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank">Micro-Infor Salamanca</a></div>
         </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📸</div>
-          <div class="contact-info-text">
-            <p>Instagram</p>
-            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
-          </div>
+        <div style="background: #fff; padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">📸</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Instagram</p><a style="color:#1a1a1a; font-weight: 600;" href="https://instagram.com/microinforsalamanca" target="_blank">@microinforsalamanca</a></div>
         </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">🏢</div>
-          <div class="contact-info-text">
-            <p>Empresa</p>
-            <span>Micro-Infor Salamanca S.L.</span>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📅</div>
-          <div class="contact-info-text">
-            <p>Fundación</p>
-            <span>1995 — más de 25 años sirviendo a Salamanca</span>
-          </div>
+        <div style="background: #fff; padding: 1.5rem; border-radius: 16px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">🏢</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Empresa</p><span style="color:#1a1a1a; font-weight: 600;">Micro-Infor Salamanca S.L.</span></div>
         </div>
       </div>
-      <div class="reveal reveal-delay-2">
-        <form id="contact-form" action="https://formsubmit.co/marta@microshopnet.net" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
-          <input type="hidden" name="_template" value="box">
-          <div class="form-group">
-            <label for="email">Tu email</label>
-            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
+      <div style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <form id="contact-form" action="#" method="POST">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;" />
           </div>
-          <div class="form-group">
-            <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <select id="asunto" name="asunto" style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;">
               <option value="">Selecciona un tema…</option>
               <option>Tarifas Movistar</option>
               <option>Tienda O2</option>
               <option>Telefónica Empresas</option>
               <option>MovilFree</option>
-              <option>Otro</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; min-height: 120px;"></textarea>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="privacidad" name="privacidad" required />
-            <label for="privacidad">Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a></label>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; background: #0055ff; color: #fff; border-radius: 8px; padding: 1rem;">Enviar mensaje</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="footer-grid">
+<!-- LIGHT THEME FOOTER -->
+<footer style="background: #1a1a1a; padding: 4rem 2rem 2rem; color: #fff;">
+  <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
     <div class="footer-brand">
-      <span class="logo-text">MicroShop</span>
-      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-      </div>
+      <span style="font-weight: 900; font-size: 1.5rem; letter-spacing: -1px;">MicroShop</span>
+      <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
     </div>
     <div class="footer-col">
-      <h5>Nuestras tiendas</h5>
-      <ul>
+      <h5 style="color: #fff; margin-bottom: 1rem;">Nuestras tiendas</h5>
+      <ul style="list-style: none; padding: 0; color: #999; font-size: 0.9rem; line-height: 2;">
         <li><a href="tiendas-movistar.html">Tiendas Movistar</a></li>
         <li><a href="o2.html">Tienda O2</a></li>
         <li><a href="telefonica-empresas.html">Telefónica Empresas</a></li>
@@ -327,8 +196,8 @@
       </ul>
     </div>
     <div class="footer-col">
-      <h5>Servicios</h5>
-      <ul>
+      <h5 style="color: #fff; margin-bottom: 1rem;">Servicios</h5>
+      <ul style="list-style: none; padding: 0; color: #999; font-size: 0.9rem; line-height: 2;">
         <li><a href="tiendas-movistar.html">Fibra y ADSL</a></li>
         <li><a href="tiendas-movistar.html">Telefonía móvil</a></li>
         <li><a href="tiendas-movistar.html">Televisión</a></li>
@@ -336,34 +205,16 @@
         <li><a href="movilfree.html">Reparaciones</a></li>
       </ul>
     </div>
-    <div class="footer-col">
-      <h5>Legal</h5>
-      <ul>
-        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-        <li><a href="politica-cookies.html">Política de cookies</a></li>
-        <li><a href="aviso-legal.html">Aviso legal</a></li>
-      </ul>
-    </div>
   </div>
-  <div class="footer-bottom">
+  <div style="border-top: 1px solid #333; margin-top: 3rem; padding-top: 2rem; text-align: center; color: #777; font-size: 0.85rem;">
     <span>© 1995–2026 Micro-Infor Salamanca S.L. Todos los derechos reservados.</span>
-    <div class="footer-bottom-links">
-      <a href="politica-privacidad.html">Privacidad</a>
-      <a href="politica-cookies.html">Cookies</a>
-      <a href="aviso-legal.html">Aviso legal</a>
-    </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
-
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-nav').classList.toggle('open');
+  });
+</script>
 </body>
-
 </html>
-
-
-
-
-
-
-

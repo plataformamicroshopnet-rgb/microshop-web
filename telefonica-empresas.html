@@ -1,365 +1,227 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Telefónica Empresas Salamanca — MicroShop</title>
-
   <meta name="description" content="Soluciones Telefónica para PYMEs y autónomos en Salamanca. Asesoramiento, visitas comerciales y catálogo completo. Tel: 923 500 500." />
-
-  <link rel="stylesheet" href="css/style.css?v=2" />
-
-  <style>
-
-    .biz-service { background:var(--dark-3); border:1px solid var(--glass-border); border-radius:var(--radius); padding:1.8rem; display:flex; gap:1.2rem; align-items:center; transition:border-color var(--transition),transform var(--transition); }
-
-    .biz-service:hover { border-color:var(--blue); transform:translateX(6px); }
-
-    .biz-photo { width:80px; height:80px; flex-shrink:0; object-fit:cover; border-radius:12px; border:1px solid rgba(0,169,206,0.2); }
-
-    .biz-service h4 { font-size:1rem; font-weight:700; margin-bottom:0.4rem; }
-
-    .biz-service p { font-size:0.88rem; color:var(--text-muted); line-height:1.7; }
-
-    .cta-banner { background:linear-gradient(135deg,rgba(0,169,206,0.13),rgba(14,45,108,0.2)); border:1px solid var(--blue); border-radius:var(--radius); padding:3rem 2rem; text-align:center; }
-
-    .cta-banner h3 { font-size:1.8rem; font-weight:800; margin-bottom:1rem; }
-
-    .cta-banner p { color:var(--text-muted); margin-bottom:2rem; }
-
-  </style>
-
-<link rel="icon" href="/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#090e1a" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="MicroShop" />
-
-  <meta property="og:title" content="MicroShop - Distribuidor Movistar y O2" />
-  <meta property="og:description" content="Más de 25 años como distribuidor oficial en Salamanca." />
-  <meta property="og:image" content="https://microshopnet.net/img/logo.png" />
-  <meta property="og:url" content="https://microshopnet.net/" />
-  <meta property="og:type" content="website" />
-
-
+  <meta name="theme-color" content="#00A9CE" />
 </head>
-
 <body class="theme-empresas">
 
+<!-- DOUBLE HEADER (Light Theme Empresas) -->
+<header style="background: transparent; padding: 0;">
+  <!-- Top dark bar -->
+  <div style="background: #0b2236; color: #fff; padding: 6px 2rem; font-size: 0.85rem; display: flex; justify-content: flex-end; gap: 1.5rem;">
+    <a href="index.html" style="color: #ccc; text-decoration: none;">Particulares</a>
+    <a href="telefonica-empresas.html" style="color: #fff; font-weight: bold; text-decoration: none;">Tu empresa y tú</a>
+    <a href="movilfree.html" style="color: #ccc; text-decoration: none;">Multiservicios</a>
+  </div>
+  
+  <!-- Main nav bar (Cyan) -->
+  <div style="background: #00A9CE; padding: 12px 2rem; display: flex; justify-content: space-between; align-items: center;">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <button class="hamburger" id="hamburger" aria-label="Menú" style="color:white;">
+        <span style="background:white;"></span><span style="background:white;"></span><span style="background:white;"></span>
+      </button>
+      <a href="telefonica-empresas.html" class="logo" style="display: flex; align-items: center; color: white; text-decoration: none; gap: 10px;">
+        <img src="img/logo.png" alt="MicroShop" style="height:45px;width:auto;border-radius:4px;filter: brightness(0) invert(1);" />
+        <span style="font-weight: 300; font-size: 1.3rem; letter-spacing: -0.5px;">| Empresas</span>
+      </a>
+    </div>
+    
+    <div class="header-nav" style="background: transparent; border: none; flex: 1; justify-content: flex-end; gap: 1.5rem;">
+      <a href="index.html" style="color: #fff; font-weight: 500;">Inicio</a>
+      <a href="tiendas-movistar.html" style="color: #fff; font-weight: 500;">Tiendas Movistar</a>
+      <a href="o2.html" style="color: #fff; font-weight: 500;">Tienda O2</a>
+      <a href="movilfree.html" style="color: #fff; font-weight: 500;">MovilFree</a>
+    </div>
 
-
-<header id="header">
-
-  <a href="index.html" class="logo">
-
-    <img src="img/logo.png" alt="MicroShop" style="height:60px;width:auto;border-radius:8px;" />
-
-  </a>
-
-  <nav>
-
-    <a href="index.html">Inicio</a>
-
-    <a href="tiendas-movistar.html">Tiendas Movistar</a>
-
-    <a href="o2.html">Tienda O2</a>
-
-    <a href="telefonica-empresas.html" class="active">Empresas</a>
-
-    <a href="movilfree.html">MovilFree</a>
-
-    <a href="#contacto" class="btn btn-primary" style="margin-left:0.5rem">Contactar</a>
-
-  </nav>
-
-  <button class="hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
-
+    <div class="header-actions" style="margin-left: 2rem;">
+      <a href="#contacto" class="btn" style="background: #0b2236; color: #fff; border-radius: 4px; padding: 8px 20px; font-weight: 600;">Contactar</a>
+    </div>
+  </div>
 </header>
 
 <nav class="mobile-nav" id="mobile-nav">
-
   <a href="index.html">Inicio</a>
-
   <a href="tiendas-movistar.html">Tiendas Movistar</a>
-
   <a href="o2.html">Tienda O2</a>
-
-  <a href="telefonica-empresas.html">Empresas</a>
-
+  <a href="telefonica-empresas.html" class="active">Empresas</a>
   <a href="movilfree.html">MovilFree</a>
-
-  <a href="#contacto" class="btn btn-primary">Contactar</a>
-
+  <a href="#contacto" class="btn btn-primary" style="background: #00A9CE;">Contactar</a>
 </nav>
 
-
-
-<!-- HERO -->
-
-<div class="page-hero">
-
-  <div class="page-hero-bg" style="background-image:url('img/hero-empresas.png')"></div>
-
-  <div class="page-hero-overlay" style="background:linear-gradient(to right,rgba(9,14,26,0.97) 50%,rgba(0,50,80,0.5))"></div>
-
-  <div class="page-hero-content">
-
-    <span class="section-label" style="color:var(--blue)">Soluciones para PYMEs y Autónomos</span>
-
-    <h1>Telefónica <span style="color:var(--blue)">Empresas</span><br/>en Salamanca</h1>
-
-    <p>Si eres PYME o autónomo, nuestros asesores especializados te ayudan a encontrar la solución tecnológica perfecta para tu negocio.</p>
-
-    <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap">
-
-      <a href="tel:923500500" class="btn btn-primary">📞 Solicitar visita: 923 500 500</a>
-
+<!-- HERO SPLIT LAYOUT (Empresas Style) -->
+<section style="padding: 0; background: #00A9CE; position: relative;">
+  <div class="container split-layout" style="align-items: center; padding: 4rem 2rem; max-width: 1200px;">
+    <!-- USER'S TEXT -->
+    <div style="background: #fff; padding: 3rem; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative; z-index: 2;">
+      <span style="color: #00A9CE; font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">Soluciones para PYMEs y Autónomos</span>
+      <h1 style="font-size: 2.8rem; font-weight: 900; color: #0b2236; line-height: 1.1; margin: 1rem 0;">Telefónica <span style="color: #00A9CE;">Empresas</span><br/>en Salamanca</h1>
+      <p style="color: #555; font-size: 1.1rem; line-height: 1.6; margin-bottom: 2rem;">Si eres PYME o autónomo, nuestros asesores especializados te ayudan a encontrar la solución tecnológica perfecta para tu negocio.</p>
+      <a href="tel:923500500" class="btn" style="background: #0b2236; color: #fff; padding: 1rem 2rem; border-radius: 6px; font-weight: bold; box-shadow: 0 10px 20px rgba(11,34,54,0.2);">📞 Solicitar visita: 923 500 500</a>
     </div>
-
+    <div style="height: 100%;">
+      <img src="img/hero-empresas.png" alt="Telefónica Empresas" style="width: 100%; height: 500px; object-fit: cover; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+    </div>
   </div>
-
-</div>
-
-
+</section>
 
 <!-- SERVICIOS -->
-
-<section style="padding:5rem 2rem;background:var(--dark-2)">
-
+<section style="padding: 5rem 2rem; background: #f5f6f8;">
   <div class="container">
-
-    <div class="reveal text-center" style="margin-bottom:3rem">
-
-      <span class="section-label" style="color:var(--blue)">Lo que ofrecemos</span>
-
-      <h2 class="section-title">Soluciones para tu empresa</h2>
-
-      <p class="section-sub">Desde conectividad hasta comunicaciones unificadas. Todo lo que necesitas para digitalizar tu negocio.</p>
-
+    <div style="text-align: center; margin-bottom: 4rem;">
+      <span style="color: #00A9CE; font-weight: 700;">Lo que ofrecemos</span>
+      <h2 style="font-size: 2.5rem; font-weight: 900; color: #0b2236; margin-top: 0.5rem;">Soluciones para tu empresa</h2>
+      <p style="color: #555; max-width: 600px; margin: 0 auto;">Desde conectividad hasta comunicaciones unificadas. Todo lo que necesitas para digitalizar tu negocio.</p>
     </div>
 
-    <div style="display:flex;flex-direction:column;gap:1.2rem">
-
-      <div class="biz-service reveal">
-
-        <img src="img/emp-fibra.png" class="biz-photo" alt="Fibra" loading="lazy" />
-
-        <div><h4>Fibra para empresas</h4><p>Conexiones simétricas hasta 1 Gbps con SLA garantizado, IP fija y soporte técnico prioritario 24/7.</p></div>
-
+    <!-- Cards Layout Light Theme -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-fibra.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Fibra" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Fibra para empresas</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Conexiones simétricas hasta 1 Gbps con SLA garantizado, IP fija y soporte técnico prioritario 24/7.</p>
+        </div>
       </div>
-
-      <div class="biz-service reveal reveal-delay-1">
-
-        <img src="img/emp-moviles.png" class="biz-photo" alt="Móviles corporativos" loading="lazy" />
-
-        <div><h4>Líneas móviles corporativas</h4><p>Gestión centralizada de flotas móviles con tarifas especiales por volumen y datos compartidos.</p></div>
-
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-moviles.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Móviles corporativos" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Líneas móviles corporativas</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Gestión centralizada de flotas móviles con tarifas especiales por volumen y datos compartidos.</p>
+        </div>
       </div>
-
-      <div class="biz-service reveal reveal-delay-2">
-
-        <img src="img/emp-centralita.png" class="biz-photo" alt="Centralita virtual" loading="lazy" />
-
-        <div><h4>Centralita virtual</h4><p>Centralita IP en la nube, sin inversión en hardware. Gestiona todas las llamadas de tu empresa desde cualquier dispositivo.</p></div>
-
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-centralita.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Centralita virtual" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Centralita virtual</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Centralita IP en la nube, sin inversión en hardware. Gestiona todas las llamadas de tu empresa desde cualquier dispositivo.</p>
+        </div>
       </div>
-
-      <div class="biz-service reveal reveal-delay-3">
-
-        <img src="img/emp-cloud.png" class="biz-photo" alt="Soluciones Cloud" loading="lazy" />
-
-        <div><h4>Soluciones Cloud</h4><p>Almacenamiento, videoconferencia y herramientas de colaboración para equipos de cualquier tamaño.</p></div>
-
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-cloud.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Soluciones Cloud" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Soluciones Cloud</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Almacenamiento, videoconferencia y herramientas de colaboración para equipos de cualquier tamaño.</p>
+        </div>
       </div>
-
-      <div class="biz-service reveal reveal-delay-4">
-
-        <img src="img/emp-seguridad.png" class="biz-photo" alt="Ciberseguridad" loading="lazy" />
-
-        <div><h4>Ciberseguridad</h4><p>Protege los datos de tu empresa con soluciones de seguridad perimetral, antivirus y backup en la nube.</p></div>
-
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-seguridad.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Ciberseguridad" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Ciberseguridad</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Protege los datos de tu empresa con soluciones de seguridad perimetral, antivirus y backup en la nube.</p>
+        </div>
       </div>
-
-      <div class="biz-service reveal">
-
-        <img src="img/emp-tv.png" class="biz-photo" alt="Televisión para negocios" loading="lazy" />
-
-        <div><h4>Televisión para negocios</h4><p>Movistar Plus+ para hostelería, hoteles y espacios comerciales con licencia de comunicación pública.</p></div>
-
+      <div style="background: #fff; border-radius: 12px; padding: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,169,206,0.1)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.03)';">
+        <img src="img/emp-tv.png" style="width:64px; height:64px; object-fit:contain; flex-shrink:0;" alt="Televisión para negocios" loading="lazy" />
+        <div>
+          <h4 style="color:#0b2236; font-size:1.15rem; font-weight:800; margin-bottom:0.5rem;">Televisión para negocios</h4>
+          <p style="color:#555; font-size:0.95rem; line-height:1.6;">Movistar Plus+ para hostelería, hoteles y espacios comerciales con licencia de comunicación pública.</p>
+        </div>
       </div>
-
     </div>
-
   </div>
-
 </section>
-
-
 
 <!-- CTA VISITA -->
-
-<section style="padding:5rem 2rem;background:var(--dark)">
-
+<section style="padding: 5rem 2rem; background: #fff;">
   <div class="container">
-
-    <div class="reveal cta-banner">
-
-      <h3>¿Quieres que te visitemos?</h3>
-
-      <p>Nuestros asesores se desplazan a tu empresa sin ningún compromiso. Analizamos tu situación actual y te presentamos la mejor solución.</p>
-
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-
-        <a href="tel:923500500" class="btn btn-primary" style="font-size:1rem;padding:1rem 2rem">📞 Llamar: 923 500 500</a>
-
-      </div>
-
+    <div style="background: #00A9CE; border-radius: 16px; padding: 4rem 2rem; text-align: center; color: #fff; box-shadow: 0 20px 40px rgba(0,169,206,0.2);">
+      <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">¿Quieres que te visitemos?</h3>
+      <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.9;">Nuestros asesores se desplazan a tu empresa sin ningún compromiso. Analizamos tu situación actual y te presentamos la mejor solución.</p>
+      <a href="tel:923500500" class="btn" style="background: #0b2236; color: #fff; font-size: 1.1rem; padding: 1rem 2.5rem; border-radius: 6px; font-weight: bold;">📞 Llamar: 923 500 500</a>
     </div>
-
   </div>
-
 </section>
 
-
-
-<!-- -- CONTACT -- -->
-<!-- ── CONTACT ── -->
-<section class="contact" id="contacto">
+<!-- CONTACTO (Light theme wrap) -->
+<section class="contact" id="contacto" style="background: #f5f6f8;">
   <div class="container">
-    <div class="reveal text-center">
-      <span class="section-label">Contacto</span>
-      <h2 class="section-title">Pregúntanos algo</h2>
-      <p class="section-sub">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <span style="color: #00A9CE; font-weight: 700;">Contacto</span>
+      <h2 style="font-size: 2.5rem; font-weight: 900; color: #0b2236; margin-top: 0.5rem;">Pregúntanos algo</h2>
+      <p style="color: #555;">Resolvemos tus dudas sobre productos Movistar, O2 y Telefónica Empresas. También cualquier consulta sobre MicroShop.</p>
     </div>
-    <div class="contact-wrap">
-      <div class="contact-info reveal reveal-delay-1">
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📘</div>
-          <div class="contact-info-text">
-            <p>Facebook</p>
-            <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener">Micro-Infor Salamanca</a>
-          </div>
+    <div class="contact-wrap" style="display: flex; gap: 2rem; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 300px;">
+        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">📘</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Facebook</p><a style="color:#0b2236; font-weight: 600;" href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank">Micro-Infor Salamanca</a></div>
         </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📸</div>
-          <div class="contact-info-text">
-            <p>Instagram</p>
-            <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener">@microinforsalamanca</a>
-          </div>
+        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">📸</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Instagram</p><a style="color:#0b2236; font-weight: 600;" href="https://instagram.com/microinforsalamanca" target="_blank">@microinforsalamanca</a></div>
         </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">🏢</div>
-          <div class="contact-info-text">
-            <p>Empresa</p>
-            <span>Micro-Infor Salamanca S.L.</span>
-          </div>
-        </div>
-        <div class="contact-info-item">
-          <div class="contact-info-icon">📅</div>
-          <div class="contact-info-text">
-            <p>Fundación</p>
-            <span>1995 — más de 25 años sirviendo a Salamanca</span>
-          </div>
+        <div style="background: #fff; padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); display: flex; align-items: center; gap: 1rem;">
+          <div style="font-size: 2rem;">🏢</div>
+          <div><p style="margin:0; color:#888; font-size:0.8rem;">Empresa</p><span style="color:#0b2236; font-weight: 600;">Micro-Infor Salamanca S.L.</span></div>
         </div>
       </div>
-      <div class="reveal reveal-delay-2">
-        <form id="contact-form" action="https://formsubmit.co/diego@microshopnet.net" method="POST">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web MicroShop">
-          <input type="hidden" name="_template" value="box">
-          <div class="form-group">
-            <label for="email">Tu email</label>
-            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required />
+      <div style="flex: 1; min-width: 300px; background: #fff; padding: 2rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+        <form id="contact-form" action="#" method="POST">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <input type="email" id="email" name="email" placeholder="hola@ejemplo.com" required style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;" />
           </div>
-          <div class="form-group">
-            <label for="asunto">Asunto</label>
-            <select id="asunto" name="asunto">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <select id="asunto" name="asunto" style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;">
               <option value="">Selecciona un tema…</option>
               <option>Tarifas Movistar</option>
               <option>Tienda O2</option>
               <option>Telefónica Empresas</option>
               <option>MovilFree</option>
-              <option>Otro</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required style="width:100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; min-height: 120px;"></textarea>
           </div>
-          <div class="form-check">
-            <input type="checkbox" id="privacidad" name="privacidad" required />
-            <label for="privacidad">Acepto la <a href="politica-privacidad.html" target="_blank">política de privacidad</a></label>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Enviar mensaje</button>
+          <button type="submit" class="btn" style="width:100%; justify-content:center; background: #00A9CE; color: #fff; border-radius: 8px; padding: 1rem; font-weight:bold; border:none; cursor:pointer;">Enviar mensaje</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="footer-grid">
+<!-- LIGHT THEME FOOTER -->
+<footer style="background: #0b2236; padding: 4rem 2rem 2rem; color: #fff;">
+  <div class="container footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
     <div class="footer-brand">
-      <span class="logo-text">MicroShop</span>
-      <p>Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/Micro-Infor-Salamanca-118374077865363" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-        <a href="https://instagram.com/microinforsalamanca" target="_blank" rel="noopener" aria-label="Instagram">📷</a>
-      </div>
+      <span style="font-weight: 900; font-size: 1.5rem; letter-spacing: -1px; color:#00A9CE;">MicroShop</span>
+      <p style="color: #999; font-size: 0.9rem; margin-top: 1rem;">Distribuidores oficiales de Telefónica Movistar y O2 en Salamanca desde 1995. Tu confianza, nuestra razón de ser.</p>
     </div>
     <div class="footer-col">
-      <h5>Nuestras tiendas</h5>
-      <ul>
-        <li><a href="tiendas-movistar.html">Tiendas Movistar</a></li>
-        <li><a href="o2.html">Tienda O2</a></li>
-        <li><a href="telefonica-empresas.html">Telefónica Empresas</a></li>
-        <li><a href="movilfree.html">MovilFree</a></li>
+      <h5 style="color: #fff; margin-bottom: 1rem;">Nuestras tiendas</h5>
+      <ul style="list-style: none; padding: 0; color: #999; font-size: 0.9rem; line-height: 2;">
+        <li><a href="tiendas-movistar.html" style="color:#999; text-decoration:none;">Tiendas Movistar</a></li>
+        <li><a href="o2.html" style="color:#999; text-decoration:none;">Tienda O2</a></li>
+        <li><a href="telefonica-empresas.html" style="color:#00A9CE; text-decoration:none; font-weight:bold;">Telefónica Empresas</a></li>
+        <li><a href="movilfree.html" style="color:#999; text-decoration:none;">MovilFree</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h5>Servicios</h5>
-      <ul>
-        <li><a href="tiendas-movistar.html">Fibra y ADSL</a></li>
-        <li><a href="tiendas-movistar.html">Telefonía móvil</a></li>
-        <li><a href="tiendas-movistar.html">Televisión</a></li>
-        <li><a href="telefonica-empresas.html">Soluciones empresariales</a></li>
-        <li><a href="movilfree.html">Reparaciones</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Legal</h5>
-      <ul>
-        <li><a href="politica-privacidad.html">Política de privacidad</a></li>
-        <li><a href="politica-cookies.html">Política de cookies</a></li>
-        <li><a href="aviso-legal.html">Aviso legal</a></li>
+      <h5 style="color: #fff; margin-bottom: 1rem;">Servicios</h5>
+      <ul style="list-style: none; padding: 0; color: #999; font-size: 0.9rem; line-height: 2;">
+        <li><a href="tiendas-movistar.html" style="color:#999; text-decoration:none;">Fibra y ADSL</a></li>
+        <li><a href="tiendas-movistar.html" style="color:#999; text-decoration:none;">Telefonía móvil</a></li>
+        <li><a href="tiendas-movistar.html" style="color:#999; text-decoration:none;">Televisión</a></li>
+        <li><a href="telefonica-empresas.html" style="color:#999; text-decoration:none;">Soluciones empresariales</a></li>
+        <li><a href="movilfree.html" style="color:#999; text-decoration:none;">Reparaciones</a></li>
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div style="border-top: 1px solid #1a3248; margin-top: 3rem; padding-top: 2rem; text-align: center; color: #666; font-size: 0.85rem;">
     <span>© 1995–2026 Micro-Infor Salamanca S.L. Todos los derechos reservados.</span>
-    <div class="footer-bottom-links">
-      <a href="politica-privacidad.html">Privacidad</a>
-      <a href="politica-cookies.html">Cookies</a>
-      <a href="aviso-legal.html">Aviso legal</a>
-    </div>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
-
+<script>
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-nav').classList.toggle('open');
+  });
+</script>
 </body>
-
 </html>
-
-
-
-
-
-
-
