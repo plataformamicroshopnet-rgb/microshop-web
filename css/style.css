@@ -628,20 +628,38 @@ footer {
   .form-group input, .form-group textarea, .form-group select { font-size: 16px; /* prevent iOS zoom */ }
 }
 
-/* O2 COLOR OVERRIDES */
-.theme-o2 .page-hero-bg { background-position: center top; }
-.theme-o2 .btn-primary { background: var(--o2-accent); color: #fff; box-shadow: 0 0 30px rgba(51,153,255,0.3); }
-.theme-o2 .btn-primary:hover { background: #2288ee; }
-.theme-o2 .section-label { color: var(--o2-accent); }
-.theme-o2 .stat-number { color: var(--o2-accent); }
-.theme-o2 .service-link { color: var(--o2-accent); }
-.theme-o2 .store-card:hover { border-color: var(--o2-accent); }
-.theme-o2 nav a.active { color: var(--o2-accent); }
+/* === THEME OVERRIDES === */
 
-/* MOVILFREE COLOR OVERRIDES */
-.theme-movilfree .btn-primary { background: var(--movilfree-pink); color: #fff; box-shadow: 0 0 30px rgba(233,30,140,0.3); }
-.theme-movilfree .btn-primary:hover { background: #c41577; }
-.theme-movilfree .section-label { color: var(--movilfree-pink); }
-.theme-movilfree .stat-number { color: var(--movilfree-pink); }
-.theme-movilfree nav a.active { color: var(--movilfree-pink); }
-.theme-movilfree .why-item:hover { border-color: var(--movilfree-pink); }
+/* Telefónica Empresas */
+body.theme-empresas {
+  --blue: #00A9CE;
+  --blue-dark: #008ba8;
+  --blue-glow: rgba(0, 169, 206, 0.25);
+  --green: #0E2D6C;
+  --green-dark: #091d45;
+  --green-glow: rgba(14, 45, 108, 0.25);
+}
+
+/* O2 */
+body.theme-o2 {
+  --blue: #0E2D6C;
+  --blue-dark: #091d45;
+  --blue-glow: rgba(14, 45, 108, 0.25);
+  --green: #3399FF;
+  --green-dark: #2077d1;
+  --green-glow: rgba(51, 153, 255, 0.25);
+}
+.theme-o2 .page-hero-bg { background-position: center top; }
+
+/* MovilFree */
+body.theme-movilfree {
+  --blue: #E91E8C;
+  --blue-dark: #c41577;
+  --blue-glow: rgba(233, 30, 140, 0.25);
+  --green: #E91E8C;
+  --green-dark: #c41577;
+  --green-glow: rgba(233, 30, 140, 0.25);
+  --dark: linear-gradient(135deg, #4A0E2E 0%, #1A000E 100%);
+  background: var(--dark);
+  background-attachment: fixed;
+}
